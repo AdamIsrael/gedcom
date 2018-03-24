@@ -35,3 +35,11 @@ type Header struct {
 	BusinessAddress Address
 	Language        string
 }
+
+func (h Header) IsValid() bool {
+	valid := false
+	if len(h.ID) <= 20 {
+
+	}
+	return valid
+}
