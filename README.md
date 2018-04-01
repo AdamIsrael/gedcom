@@ -1,7 +1,7 @@
 # A Go library to parse GEDCOM files
 
 [![Build Status](https://travis-ci.org/AdamIsrael/gedcom.svg?branch=master)](https://travis-ci.org/AdamIsrael/gedcom)
-![Report Card](https://goreportcard.com/badge/github.com/adamisrael/gedcom)]
+![Report Card](https://goreportcard.com/badge/github.com/adamisrael/gedcom)
 
 ## Goals
 
