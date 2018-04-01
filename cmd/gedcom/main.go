@@ -2,15 +2,10 @@ package main
 
 import (
 	"bufio"
-	"bytes"
 	"flag"
 	"fmt"
-	"github.com/adamisrael/gedcom/parsers"
-	"github.com/adamisrael/gedcom/types"
-	"io"
+	"github.com/adamisrael/gedcom/parser"
 	"os"
-	"strconv"
-	"strings"
 )
 
 func check(e error) {
@@ -84,136 +79,21 @@ func main() {
 
 	*/
 
-	reader := bufio.NewReader(f)
-	var gedcom types.Gedcom
+	p := parser.NewParser(bufio.NewReader(f))
+	g, err := p.Parse()
+	check(err)
 
-	for {
-		var lines []string
-		lines, reader = scanLevel(0, reader)
+	for _, i := range g.Individual {
+		if i.Xref == "P1" {
+			if *verbose {
+				fmt.Printf("%#v\n", i)
 
-		if strings.HasSuffix(lines[0], "HEAD") {
-			fmt.Println("Found HEAD record")
-			gedcom.Header = *parsers.ParseHeader(lines)
-			fmt.Printf("%#v", gedcom)
-		}
-
-		if *verbose {
-			for _, line := range lines {
-				fmt.Println(line)
 			}
-		}
-		if reader == nil {
-			break
-		}
-		// break
-	}
-	fmt.Println("Done.")
-	// lines, reader = scanLevel(0, reader)
-	// for _, line := range lines {
-	// 	fmt.Println(line)
-	// }
-	// fmt.Println(lines)
-	// // Define a split function that separates on level.
-	// // onLevel := func(data []byte, atEOF bool) (advance int, token []byte, err error) {
-	// // 	if atEOF && len(data) == 0 {
-	// // 		return 0, nil, nil
-	// // 	}
-	// //
-	// // 	if i := bytes.Index(data, []byte{'\n', '0'}); i >= 0 {
-	// // 		return i + 1, data[0:i], nil
-	// // 	}
-	// //
-	// // 	// if i := strings.Index(string(data), "\n0"); i >= 0 {
-	// // 	// 	return i + 1, data[0:i], nil
-	// // 	// }
-	// //
-	// // 	if atEOF {
-	// // 		return len(data), data, nil
-	// // 	}
-	// // 	return 0, nil, nil
-	// // }
-	// //
-	// // scanner.Split(onLevel)
-	// for scanner.Scan() {
-	// 	/**
-	// 	* gedcom_line syntax
-	// 	*
-	// 	* A GEDCOM line has the following syntax:
-	// 	* level + delim + [optional_xref_ID] + tag + [optional_line_value] + terminator
-	// 	*
-	// 	 */
-	//
-	// 	var record []string
-	// 	record, scanner = scanLevel(0, scanner)
-	// 	fmt.Println(record)
-	// 	break
-	// 	// // Right out of the gate, INDI have an extra trailing space.
-	// 	// line := strings.TrimSpace(scanner.Text())
-	// 	// // fmt.Println(line)
-	// 	//
-	// 	// if strings.HasPrefix(line, "0") {
-	// 	//
-	// 	// 	// Record types:
-	// 	// 	// HEAD
-	// 	// 	fmt.Printf("'%s'\n", line)
-	// 	// 	if strings.HasSuffix(line, "HEAD") {
-	// 	// 		// Parse the Header
-	// 	// 		// scanner.Split()
-	// 	// 	}
-	// 	//
-	// 	// 	// INDI
-	// 	// 	if strings.HasSuffix(line, "INDI") {
-	// 	// 		// fmt.Println(line) // Println will add back the final '\n'
-	// 	// 	}
-	// 	// 	// SOUR
-	// 	// 	// FAM
-	// 	// 	// REPO
-	// 	// 	// TRLR
-	// 	// 	if strings.HasSuffix(line, "TRLR") {
-	// 	// 		// Parse the Trailer
-	// 	// 	}
-	// 	//
-	// 	// 	// CONC or CONT
-	// 	// 	// fmt.Println(scanner.Text()) // Println will add back the final '\n'
-	// 	//
-	// 	// }
-	//
-	// }
 
-	// if err := reader.Err(); err != nil {
-	// 	fmt.Fprintln(os.Stderr, "reading standard input:", err)
-	// }
-
-}
-
-func scanLevel(level int, reader *bufio.Reader) ([]string, *bufio.Reader) {
-	lines := make([]string, 0)
-	for {
-		line, err := reader.ReadString('\n')
-		if err == io.EOF {
-			lines = append(lines, line)
-			return lines, nil
-		}
-		check(err)
-
-		// Some lines may have trailing spaces, so we'll normalize it early.
-		line = strings.TrimSpace(line)
-
-		if strings.HasPrefix(line, strconv.Itoa(level)) {
-			// To further refactor, at this point we can identify the type of
-			// record. Maybe feed this to the appropriate parser?
-			if len(lines) > 0 {
-				break
+			for _, n := range i.Name {
+				fmt.Printf("Name: %q\n", n.Name)
 			}
-		}
-		lines = append(lines, line)
-
-		// Check if the next line starts a new record
-		next, _ := reader.Peek(1)
-		if bytes.Compare(next, []byte(strconv.Itoa(level))) == 0 {
-			break
 		}
 	}
 
-	return lines, reader
 }
