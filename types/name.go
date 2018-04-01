@@ -1,7 +1,14 @@
 package types
 
 type Name struct {
-	Name     string
+	// The raw, as-is string from the GEDCOM.
+	Name string
+
+	// The given and surname, and suffix
+	Given   string
+	Surname string
+	Suffix  string
+
 	Citation []*Citation
 	Note     []*Note
 }

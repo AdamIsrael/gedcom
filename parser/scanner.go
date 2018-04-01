@@ -54,7 +54,7 @@ func (s *Scanner) Scan(data string) (offset int, err error) {
 				continue
 			default:
 				s.parseState = STATE_ERROR
-				err = fmt.Errorf("Found non-whitespace before level")
+				err = fmt.Errorf("Found non-whitespace before level: %q", data)
 				return
 			}
 		case STATE_LEVEL:

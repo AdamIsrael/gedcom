@@ -192,8 +192,38 @@ func makeIndividualParser(p *Parser, i *types.Individual, minLevel int) parser {
 			p.pushParser(makeEventParser(p, e, level))
 
 		case "NAME":
-			// fmt.Printf("Name: %q\n", value)
-			n := &types.Name{Name: value}
+			// The Gedcom stores the name as "First Middle /Last/". Store the
+			// original, but parse out the given and surname, too.
+			var given, surname, suffix string
+
+			/*
+			*	Given the following examples:
+			*	a) "Adam Michael /Israel/"
+			*	b) "Adam Michael"
+			*	c) "/Israel/"
+			*   d) "Adam Michael /Israel/ Sr"
+			*
+			*	a, c, and d will return a three element slice:
+			*		0 holding the given name(s)
+			*		1 holding the surname
+			*		2 holding the suffix.
+			*	b will return a single element slice with just the given name.
+			*
+			 */
+
+			names := strings.Split(value, "/")
+			given = strings.TrimSpace(names[0])
+			if len(names) == 3 {
+				surname = names[1]
+				suffix = names[2]
+			}
+
+			n := &types.Name{
+				Name:    value,
+				Given:   given,
+				Surname: surname,
+				Suffix:  suffix}
+
 			i.Name = append(i.Name, n)
 			p.pushParser(makeNameParser(p, n, level))
 		case "SEX":
