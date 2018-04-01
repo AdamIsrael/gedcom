@@ -23,7 +23,7 @@ import (
 // Ensure the parser can parse strings into Statement ASTs.
 func TestParser_ParseGedcom(t *testing.T) {
 
-	f, err := os.Open("../testdata/AdamIsrael.ged")
+	f, err := os.Open("../testdata/simple.ged")
 	if err != nil {
 		panic(err)
 	}
