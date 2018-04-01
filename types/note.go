@@ -1,6 +1,9 @@
 package types
 
-type Note struct{}
+type Note struct {
+	Note     string
+	Citation []*Citation
+}
 
 func (n Note) IsValid() bool {
 	valid := false

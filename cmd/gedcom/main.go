@@ -5,6 +5,8 @@ import (
 	"bytes"
 	"flag"
 	"fmt"
+	"github.com/adamisrael/gedcom/parsers"
+	"github.com/adamisrael/gedcom/types"
 	"io"
 	"os"
 	"strconv"
@@ -18,6 +20,7 @@ func check(e error) {
 }
 
 func main() {
+	verbose := flag.Bool("verbose", false, "verbosity")
 	gedcomFile := flag.String("gedcom", "", "The path to the GEDCOM file to analyze.")
 
 	flag.Parse()
@@ -81,24 +84,28 @@ func main() {
 
 	*/
 
-	// r := bufio.Reader(f)
-	// r.
-	//
-	// front,_ := r.ReadSlice(delim)
-
-	// A parent scanner to scan for the top-level records, and sub-scanners to scan each record.
 	reader := bufio.NewReader(f)
+	var gedcom types.Gedcom
 
 	for {
 		var lines []string
 		lines, reader = scanLevel(0, reader)
-		for _, line := range lines {
-			fmt.Println(line)
+
+		if strings.HasSuffix(lines[0], "HEAD") {
+			fmt.Println("Found HEAD record")
+			gedcom.Header = *parsers.ParseHeader(lines)
+			fmt.Printf("%#v", gedcom)
+		}
+
+		if *verbose {
+			for _, line := range lines {
+				fmt.Println(line)
+			}
 		}
 		if reader == nil {
 			break
 		}
-		break
+		// break
 	}
 	fmt.Println("Done.")
 	// lines, reader = scanLevel(0, reader)
@@ -189,22 +196,19 @@ func scanLevel(level int, reader *bufio.Reader) ([]string, *bufio.Reader) {
 		}
 		check(err)
 
+		// Some lines may have trailing spaces, so we'll normalize it early.
 		line = strings.TrimSpace(line)
+
 		if strings.HasPrefix(line, strconv.Itoa(level)) {
 			// To further refactor, at this point we can identify the type of
 			// record. Maybe feed this to the appropriate parser?
 			if len(lines) > 0 {
 				break
 			}
-			if len(lines) == 0 {
-				if strings.HasSuffix(line, "HEAD") {
-					fmt.Println("Found HEAD record")
-				}
-			}
-			lines = append(lines, line)
-		} else {
-			lines = append(lines, line)
 		}
+		lines = append(lines, line)
+
+		// Check if the next line starts a new record
 		next, _ := reader.Peek(1)
 		if bytes.Compare(next, []byte(strconv.Itoa(level))) == 0 {
 			break
