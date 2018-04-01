@@ -1,5 +1,10 @@
 language: go
 
+# Work around `case-insensitive import collision` because of mixed-case of
+# my github user name. All imports use the lowercase version, but travis-ci
+# tries to run against the ProperCase version and fails.
+go_import_path: github.com/adamisrael/gedcom
+
 go:
     - 1.10
     - tip
