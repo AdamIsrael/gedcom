@@ -20,9 +20,8 @@ before_script:
 
 script:
   - test -z $(gofmt -s -l $GO_FILES)
-  - go test -v -race $PKGS
+  - go test -v -race -coverprofile=coverage.txt -covermode=atomic $PKGS
   - go vet $PKGS
-  - go test -race -coverprofile=coverage.txt -covermode=atomic
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
