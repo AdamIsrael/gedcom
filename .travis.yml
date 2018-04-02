@@ -14,11 +14,15 @@ matrix:
         - go: tip
           fast_finish: true
 
-          before_script:
-              - GO_FILES=$(find . -iname '*.go' | grep -v /vendor/)
-              - PKGS=$(go list ./... | grep -v /vendor/)
+before_script:
+  - GO_FILES=$(find . -iname '*.go' | grep -v /vendor/)
+  - PKGS=$(go list ./... | grep -v /vendor/)
 
-          script:
-              - test -z $(gofmt -s -l $GO_FILES)
-              - go test -v -race $PKGS
-              - go vet $PKGS
+script:
+  - test -z $(gofmt -s -l $GO_FILES)
+  - go test -v -race $PKGS
+  - go vet $PKGS
+  - go test -race -coverprofile=coverage.txt -covermode=atomic
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
