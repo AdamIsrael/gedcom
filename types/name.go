@@ -20,3 +20,7 @@ func (n Name) IsValid() bool {
 	// }
 	return valid
 }
+
+// func (n Name) String() string {
+// 	return fmt.Sprintf("%v (%v)", i.Name[0], i.Sex)
+// }
