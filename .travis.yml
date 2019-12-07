@@ -6,7 +6,7 @@ language: go
 go_import_path: github.com/adamisrael/gedcom
 
 go:
-    - 1.10
+    - 1.13
     - tip
 
 matrix:
