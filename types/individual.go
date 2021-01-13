@@ -13,7 +13,6 @@ type Individual struct {
 	Family    []*FamilyLink `json:"family"`
 }
 
-
 // IsValid performs validation against the record to
 // determine if it represents a valid Individual
 func (i Individual) IsValid() bool {

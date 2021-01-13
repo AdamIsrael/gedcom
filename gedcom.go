@@ -11,6 +11,7 @@ import (
 
 // How do I export types from types.* here as gedcom.Gedcom?
 
+// Gedcom is the main entrypoint
 func Gedcom(gedcomFile string) *types.Gedcom {
 
 	f, err := os.Open(gedcomFile)
