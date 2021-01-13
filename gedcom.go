@@ -2,10 +2,8 @@ package gedcom
 
 import (
 	"bufio"
-	// "bytes"
-	"github.com/adamisrael/gedcom/parser"
-	"github.com/adamisrael/gedcom/types"
-	// "io/ioutil"
+	"gedcom/parser"
+	"gedcom/types"
 	"os"
 )
 

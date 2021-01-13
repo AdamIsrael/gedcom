@@ -1,7 +1,6 @@
 package parser
 
 import (
-	// "github.com/adamisrael/gedcom/parser"
 	"strings"
 	"testing"
 )

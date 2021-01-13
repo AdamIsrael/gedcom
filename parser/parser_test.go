@@ -1,13 +1,9 @@
 package parser_test
 
 import (
-	"fmt"
-	// "reflect"
-	// "strings"
 	"bufio"
-	// "io"
-	"github.com/adamisrael/gedcom/parser"
-	// "github.com/adamisrael/gedcom/types"
+	"fmt"
+	"gedcom/parser"
 	"os"
 	"testing"
 )

@@ -56,7 +56,7 @@ GEDCOM should not place any white space in front of the GEDCOM line.
 
 import (
 	"fmt"
-	"github.com/adamisrael/gedcom/types"
+	"gedcom/types"
 	"io"
 	"strings"
 )
