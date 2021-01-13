@@ -1,12 +1,10 @@
 package main
 
 import (
-	// "bufio"
 	"flag"
 	"fmt"
-	// "github.com/adamisrael/gedcom/parser"
-	"github.com/adamisrael/gedcom"
-	// "os"
+	// "github.com/adamisrael/gedcom"
+	"gedcom"
 )
 
 func check(e error) {
@@ -23,6 +21,10 @@ func main() {
 
 	flag.Parse()
 
+	if *gedcomFile == nil {
+		fmt.Println("Invalid gedcom")
+		return
+	}
 	// Check if file exists
 
 	// f, err := os.Open(*gedcomFile)
@@ -34,13 +36,7 @@ func main() {
 	fmt.Println("Opened Gedcom")
 	for _, i := range g.Individual {
 		if i.Xref == "P1" {
-			// if *verbose {
-			// 	fmt.Printf("%#v\n", i)
-
-			// }
-
 			if *format == "json" {
-
 				fmt.Println("JSON selected")
 				fmt.Println(i.JSON())
 			} else {
@@ -57,24 +53,4 @@ func main() {
 			fmt.Printf("%#v\n", i)
 		}
 	}
-
-	// p := parser.NewParser(bufio.NewReader(f))
-	// g, err := p.Parse()
-	// check(err)
-	//
-	// // fmt.Printf("Gedcom: %#v\n", g)
-	//
-	// for _, i := range g.Individual {
-	// 	if i.Xref == "P1" {
-	// 		if *verbose {
-	// 			fmt.Printf("%#v\n", i)
-	//
-	// 		}
-	//
-	// 		for _, n := range i.Name {
-	// 			fmt.Printf("Name: %q\n", n.Name)
-	// 		}
-	// 	}
-	// }
-
 }

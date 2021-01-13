@@ -3,9 +3,10 @@ package parser_test
 import (
 	"bufio"
 	"fmt"
-	"gedcom/parser"
 	"os"
 	"testing"
+
+	"github.com/adamisrael/gedcom/parser"
 )
 
 // func init() {

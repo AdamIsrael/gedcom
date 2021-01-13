@@ -2,9 +2,10 @@ package gedcom
 
 import (
 	"bufio"
-	"gedcom/parser"
-	"gedcom/types"
 	"os"
+
+	"github.com/adamisrael/gedcom/parser"
+	"github.com/adamisrael/gedcom/types"
 )
 
 // How do I export types from types.* here as gedcom.Gedcom?

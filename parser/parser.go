@@ -56,9 +56,10 @@ GEDCOM should not place any white space in front of the GEDCOM line.
 
 import (
 	"fmt"
-	"gedcom/types"
 	"io"
 	"strings"
+
+	"github.com/adamisrael/gedcom/types"
 )
 
 // Parser represents a parser.
