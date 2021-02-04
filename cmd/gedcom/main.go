@@ -3,8 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	// "github.com/adamisrael/gedcom"
-	"gedcom"
+
+	"github.com/adamisrael/gedcom"
+	// "gedcom"
 )
 
 func check(e error) {
@@ -21,7 +22,7 @@ func main() {
 
 	flag.Parse()
 
-	if *gedcomFile == nil {
+	if *gedcomFile == "" {
 		fmt.Println("Invalid gedcom")
 		return
 	}
