@@ -10,7 +10,7 @@ type Citation struct {
 }
 
 func (c Citation) IsValid() bool {
-	valid := false
+	valid := true
 	// if len(c.Name) <= 8 {
 	// 	valid = true
 	// }
