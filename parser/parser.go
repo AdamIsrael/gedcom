@@ -485,7 +485,14 @@ func makeAddressParser(p *Parser, a *types.Address, minLevel int) parser {
 		case "CTRY":
 			a.Country = value
 		case "PHON":
-			a.Phone = value
+			a.Phone = append(a.Phone, value)
+		case "EMAIL":
+			a.Email = append(a.Email, value)
+		case "FAX":
+			a.Fax = append(a.Fax, value)
+		case "WWW":
+			a.WWW = append(a.WWW, value)
+
 		}
 
 		return nil

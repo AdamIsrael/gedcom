@@ -2,7 +2,6 @@ package parser_test
 
 import (
 	"bufio"
-	"fmt"
 	"os"
 	"testing"
 
@@ -36,19 +35,19 @@ func TestParser_ParseGedcom(t *testing.T) {
 	if g == nil {
 		t.Fatalf("Result of decoding gedcom was nil, expected valid object")
 	}
-	// h := types.Header{}
-	// if g.Header == h {
-	// 	t.Fatalf("Header was nil, expected types.Header")
+	// t.Fatalf("Testing")
+
+	// for _, i := range g.Individual {
+	// 	fmt.Println(i.Xref)
+
+	// 	// for _, n := range i.Name {
+	// 	// 	fmt.Printf("Name: %q\n", n.Name)
+	// 	// }
+
+	// 	// for _, event := range i.Event {
+	// 	// 	fmt.Printf("Event: %#v\n", event)
+	// 	// }
+
 	// }
-
-	for _, i := range g.Individual {
-		if i.Xref == "P1" {
-			fmt.Printf("%#v\n", i)
-
-			for _, n := range i.Name {
-				fmt.Printf("Name: %q\n", n.Name)
-			}
-		}
-	}
 
 }
