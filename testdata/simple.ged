@@ -1,12 +1,12 @@
 0 HEAD
 1 SOUR Gramps
-2 VERS 4.2.2
+2 VERS 5.1.3
 2 NAME Gramps
-1 DATE 1 APR 2018
-2 TIME 00:02:08
+1 DATE 10 FEB 2021
+2 TIME 19:01:53
 1 SUBM @SUBM@
-1 FILE /home/stone/go/src/github.com/adamisrael/gedcom/testdata/simple.ged
-1 COPR Copyright (c) 2018 Adam Israel.
+1 FILE /home/stone/go/src/github.com/adamisrael/gedcom/testdata/simple2.ged
+1 COPR Copyright (c) 2021 Adam Israel.
 1 GEDC
 2 VERS 5.5.1
 2 FORM LINEAGE-LINKED
@@ -14,6 +14,36 @@
 1 LANG English
 0 @SUBM@ SUBM
 1 NAME Adam Israel
-1 ADDR
-1 EMAIL adam@adamisrael.com
+1 EMAIL adam@@adamisrael.com
+0 @I0000@ INDI
+1 NAME John /Doe Jr/
+2 GIVN John
+2 SPFX Doe
+2 SURN Jr
+1 SEX M
+1 BIRT
+2 DATE 1 JAN 1980
+1 FAMC @F0000@
+2 PEDI birth
+1 CHAN
+2 DATE 11 FEB 2021
+3 TIME 00:00:44
+0 @I0001@ INDI
+1 NAME John /Doe Sr/
+2 GIVN John
+2 SPFX Doe
+2 SURN Sr
+1 SEX M
+1 BIRT
+2 DATE 12 DEC 1970
+1 FAMS @F0000@
+1 CHAN
+2 DATE 10 FEB 2021
+3 TIME 23:59:52
+0 @F0000@ FAM
+1 HUSB @I0001@
+1 CHIL @I0000@
+1 CHAN
+2 DATE 11 FEB 2021
+3 TIME 00:00:44
 0 TRLR
