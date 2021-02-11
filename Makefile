@@ -13,6 +13,9 @@ build:
 test:
 	$(GOTEST) -v ./...
 
+coverage:
+	$(GOTEST) -cover ./...
+
 clean:
 	$(GOCLEAN)
 	rm -f gedcom

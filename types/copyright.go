@@ -5,7 +5,7 @@ type Copyright struct {
 }
 
 func (c Copyright) IsValid() bool {
-	valid := false
+	valid := true
 
 	return valid
 }
