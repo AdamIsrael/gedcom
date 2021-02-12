@@ -8,9 +8,18 @@ import (
 
 func TestType_individual(t *testing.T) {
 	individual := types.Individual{
-		"",                    // Xref
-		"",                    // Sex
-		[]*types.Name{},       // Name
+		"",  // Xref
+		"M", // Sex
+		[]*types.Name{
+			{
+				"Adam /Doe/",
+				"Adam",
+				"Doe",
+				"Sr",
+				[]*types.Citation{},
+				[]*types.Note{},
+			},
+		}, // Name
 		[]*types.Event{},      // Events
 		[]*types.Event{},      // Attributes
 		[]*types.FamilyLink{}, // Parents
@@ -20,4 +29,8 @@ func TestType_individual(t *testing.T) {
 	if !individual.IsValid() {
 		t.Fatalf("Individual is invalid")
 	}
+
+	_ = individual.String()
+
+	_ = individual.JSON()
 }
