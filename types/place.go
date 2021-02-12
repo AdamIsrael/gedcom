@@ -7,7 +7,7 @@ type Place struct {
 }
 
 func (p Place) IsValid() bool {
-	valid := false
+	valid := true
 	// if len(d.Data) <= 8 {
 	// 	valid = true
 	// }

@@ -13,7 +13,7 @@ type Gedcom struct {
 }
 
 func (g Gedcom) IsValid() bool {
-	valid := false
+	valid := true
 
 	return valid
 }

@@ -16,7 +16,7 @@ type Event struct {
 }
 
 func (e Event) IsValid() bool {
-	valid := false
+	valid := true
 
 	return valid
 }

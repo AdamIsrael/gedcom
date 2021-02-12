@@ -3,7 +3,7 @@ package types
 type MultiMedia struct{}
 
 func (mm MultiMedia) IsValid() bool {
-	valid := false
+	valid := true
 
 	return valid
 }

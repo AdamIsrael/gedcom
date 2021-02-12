@@ -3,7 +3,7 @@ package types
 type Repository struct{}
 
 func (r Repository) IsValid() bool {
-	valid := false
+	valid := true
 
 	return valid
 }

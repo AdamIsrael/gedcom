@@ -7,7 +7,7 @@ type FamilyLink struct {
 }
 
 func (f FamilyLink) IsValid() bool {
-	valid := false
+	valid := true
 
 	return valid
 }

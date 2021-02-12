@@ -6,7 +6,7 @@ type Data struct {
 }
 
 func (d Data) IsValid() bool {
-	valid := false
+	valid := true
 	// if len(d.Data) <= 8 {
 	// 	valid = true
 	// }

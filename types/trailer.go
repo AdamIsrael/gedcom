@@ -4,6 +4,6 @@ type Trailer struct {
 }
 
 func (t Trailer) IsValid() bool {
-	valid := false
+	valid := true
 	return valid
 }

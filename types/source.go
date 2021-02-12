@@ -10,7 +10,7 @@ type Source struct {
 }
 
 func (s Source) IsValid() bool {
-	valid := false
+	valid := true
 
 	return valid
 }
@@ -21,7 +21,7 @@ type SourceData struct {
 }
 
 func (sd SourceData) IsValid() bool {
-	valid := false
+	valid := true
 
 	return valid
 }

@@ -14,7 +14,7 @@ type Name struct {
 }
 
 func (n Name) IsValid() bool {
-	valid := false
+	valid := true
 	// if len(n.Name) <= 8 {
 	// 	valid = true
 	// }

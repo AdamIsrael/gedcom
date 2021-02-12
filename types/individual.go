@@ -16,7 +16,7 @@ type Individual struct {
 // IsValid performs validation against the record to
 // determine if it represents a valid Individual
 func (i Individual) IsValid() bool {
-	valid := false
+	valid := true
 
 	return valid
 }

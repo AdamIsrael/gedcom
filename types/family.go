@@ -9,7 +9,7 @@ type Family struct {
 }
 
 func (f Family) IsValid() bool {
-	valid := false
+	valid := true
 
 	return valid
 }
