@@ -8,14 +8,6 @@ import (
 	"github.com/adamisrael/gedcom/parser"
 )
 
-// func init() {
-// 	var err error
-// 	data, err = ioutil.ReadFile("testdata/allged.ged")
-// 	if err != nil {
-// 		panic(err)
-// 	}
-// }
-
 // Ensure the parser can parse strings into Statement ASTs.
 func TestParser_ParseGedcom(t *testing.T) {
 
@@ -35,19 +27,4 @@ func TestParser_ParseGedcom(t *testing.T) {
 	if g == nil {
 		t.Fatalf("Result of decoding gedcom was nil, expected valid object")
 	}
-	// t.Fatalf("Testing")
-
-	// for _, i := range g.Individual {
-	// 	fmt.Println(i.Xref)
-
-	// 	// for _, n := range i.Name {
-	// 	// 	fmt.Printf("Name: %q\n", n.Name)
-	// 	// }
-
-	// 	// for _, event := range i.Event {
-	// 	// 	fmt.Printf("Event: %#v\n", event)
-	// 	// }
-
-	// }
-
 }
