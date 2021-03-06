@@ -7,6 +7,9 @@ GOGET=$(GOCMD) get
 
 all: test build
 
+benchmark:
+	$(GOTEST) -bench . ./...
+
 build:
 	$(GOBUILD) ./cmd/gedcom
 

@@ -28,3 +28,18 @@ func TestParser_ParseGedcom(t *testing.T) {
 		t.Fatalf("Result of decoding gedcom was nil, expected valid object")
 	}
 }
+
+func BenchmarkParseGedcom(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		f, err := os.Open("../testdata/simple.ged")
+		if err != nil {
+			panic(err)
+		}
+		// defer f.Close()
+
+		p := parser.NewParser(bufio.NewReader(f))
+		_, err = p.Parse()
+
+		f.Close()
+	}
+}
