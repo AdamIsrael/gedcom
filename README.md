@@ -32,3 +32,10 @@ Support GEDCOM 5.5 and 5.5.1, but consider adding support for other versions as 
 ## Testing
 
 The simple GEDCOM used for testing is rather limited, hence why the testing coverage for the parser is only 51.8%. A more complex GEDCOM will raise the coverage. A TODO would be to develop a full-featured GEDCOM for use with testing.
+
+## TODO
+
+- Find by xref
+- Relationships -- need to calculate the relationship between all individuals, method to find by relationship, find unrelated
+- Island trees -- need to be able to list islands of unrelated/unconnected individuals or families
+- 
