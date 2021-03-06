@@ -55,7 +55,6 @@ GEDCOM should not place any white space in front of the GEDCOM line.
 */
 
 import (
-	"fmt"
 	"io"
 	"strings"
 
@@ -78,8 +77,8 @@ type Parser struct {
 
 type parser func(level int, tag string, value string, xref string) error
 
-func (P *Parser) pushParser(p parser) {
-	P.parsers = append(P.parsers, p)
+func (p *Parser) pushParser(P parser) {
+	p.parsers = append(p.parsers, P)
 }
 
 func (p *Parser) popParser(level int, tag string, value string, xref string) error {
@@ -154,15 +153,12 @@ func makeRootParser(p *Parser, g *types.Gedcom) parser {
 		if level == 0 {
 			switch tag {
 			case "HEAD":
-				// println(level, tag, value, xref)
-				obj := p.head(xref)
+				// obj := p.head(xref)
 				// println("obj: %x", obj)
-				fmt.Printf("%#v\n", obj)
 			case "INDI":
 				obj := p.individual(xref)
 				g.Individual = append(g.Individual, obj)
 				p.pushParser(makeIndividualParser(p, obj, level))
-			// fmt.Printf("%#v\n", obj)
 			case "SUBM":
 				g.Submitter = append(g.Submitter, &types.Submitter{})
 			case "FAM":
