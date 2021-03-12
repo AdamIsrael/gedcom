@@ -13,6 +13,9 @@ benchmark:
 build:
 	$(GOBUILD) ./cmd/gedcom
 
+install:
+	${GOCMD} install ./cmd/gedcom
+
 test:
 	$(GOTEST) -v ./...
 
