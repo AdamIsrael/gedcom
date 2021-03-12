@@ -12,6 +12,23 @@ func findHomeIndividual(g types.Gedcom) types.Individual {
 	return *g.Individual[0]
 }
 
+// findIndividualByNameDate finds an Individual by name, matching their year
+// of birth and death to limit results
+func findIndividualByNameDate(g types.Gedcom, name string, yob int, yod int) []types.Individual {
+	var individuals []types.Individual
+
+	re := regexp.MustCompile(name)
+
+	for _, i := range g.Individual {
+		if re.Find([]byte(i.Name[0].Name)) != nil {
+			// TODO: Implement better date handling through the Individual object
+			individuals = append(individuals, *i)
+		}
+	}
+	return individuals
+
+}
+
 func findIndividualsByName(g types.Gedcom, name string) []types.Individual {
 	var individuals []types.Individual
 
