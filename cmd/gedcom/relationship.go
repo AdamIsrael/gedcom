@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"sort"
 
 	"github.com/adamisrael/gedcom/types"
 	"github.com/dustin/go-humanize"
@@ -18,43 +17,54 @@ type Relationship struct {
 	Relationship string
 }
 
-func calculateRelationshipTest(home types.Individual, target types.Individual) string {
-	// Experiment with Depth-first search (DSF)
+func calculateRelationship(home types.Individual, target types.Individual) string {
+	var relationship = ""
+	// iterate through each generation to find a common ancestor
+	a := findAncestors(&home, 0)
+	b := findAncestors(&target, 0)
 
-	ancestors := findAncestors(&home)
-	siblings := findSiblings(&home)
+	// var seen = make(map[string]int)
+	var found = 0
 
-	fmt.Printf("%d sibling(s) found\n", len(siblings))
-	for _, sibling := range siblings {
-		fmt.Printf("%s - %s\n", sibling.Person.Name[0].Name, sibling.Relationship)
+	for _, ancestorA := range a {
+		if ancestorA.Xref == target.Xref {
+			relationship = ancestorA.Relationship
+			break
+		}
+
+		for _, ancestorB := range b {
+			if ancestorA.Xref == ancestorB.Xref {
+				// fmt.Printf("Found common ancestor at generation %d: %s\n", ancestorA.Generations, ancestorA.Person.Name[0].Name)
+				// fmt.Printf("Generation %d vs %d\n", ancestorA.Generations, ancestorB.Generations)
+				// fmt.Printf("Removed %d vs %d\n", ancestorA.Removed, ancestorB.Removed)
+
+				if ancestorA.Generations >= ancestorB.Generations {
+					removed := ancestorA.Generations - ancestorB.Generations
+					relationship = getChildRelationship(ancestorB.Generations, removed, &target)
+				} else {
+					removed := ancestorB.Generations - ancestorA.Generations
+
+					relationship = getChildRelationship(ancestorA.Generations, removed, &target)
+
+				}
+
+				found = 1
+				break
+			}
+
+			if found == 1 {
+				break
+			}
+		}
 	}
 
-	// Sort Ancestors by generation
-	sort.Slice(ancestors, func(i, j int) bool {
-		return ancestors[i].Generations < ancestors[j].Generations
-	})
-
-	fmt.Printf("%d generation(s) found\n", len(ancestors))
-	for _, ancestor := range ancestors {
-		fmt.Printf("(%d) %s - %s\n", ancestor.Generations, ancestor.Person.Name[0].Name, ancestor.Relationship)
-	}
-
-	return ""
+	return relationship
 }
 
 // findAncestors iterates recursively through an Individual's parents in order
 // and returns a slice of their Relationships
-func findAncestors(home *types.Individual, gen ...int) []Relationship {
+func findAncestors(home *types.Individual, generation int) []Relationship {
 	var relationships []Relationship
-
-	// Use a variadic param for generation so the initial call
-	// doesn't need to specify the generation
-	var generation = 0
-	if len(gen) == 0 {
-		generation = 1
-	} else {
-		generation = gen[0] + 1
-	}
 
 	for _, parent := range home.Parents {
 		if parent.Family.Husband != nil {
@@ -63,10 +73,10 @@ func findAncestors(home *types.Individual, gen ...int) []Relationship {
 				Person:       *parent.Family.Husband,
 				Generations:  generation,
 				Removed:      0,
-				Relationship: getAncestorRelationship(generation, "M"),
+				Relationship: getAncestorRelationship(generation+1, "M"),
 			}
 			relationships = append(relationships, relation)
-			relationships = append(relationships, findAncestors(parent.Family.Husband, generation)...)
+			relationships = append(relationships, findAncestors(parent.Family.Husband, generation+1)...)
 		}
 
 		if parent.Family.Wife != nil {
@@ -75,10 +85,10 @@ func findAncestors(home *types.Individual, gen ...int) []Relationship {
 				Person:       *parent.Family.Wife,
 				Generations:  generation,
 				Removed:      0,
-				Relationship: getAncestorRelationship(generation, "F"),
+				Relationship: getAncestorRelationship(generation+1, "F"),
 			}
 			relationships = append(relationships, relation)
-			relationships = append(relationships, findAncestors(parent.Family.Wife, generation)...)
+			relationships = append(relationships, findAncestors(parent.Family.Wife, generation+1)...)
 		}
 	}
 	return relationships
@@ -86,6 +96,7 @@ func findAncestors(home *types.Individual, gen ...int) []Relationship {
 
 // findSiblings returns a slice of Relationship for a given Individual
 func findSiblings(home *types.Individual) []Relationship {
+	fmt.Printf("Finding siblings for %s\n", home.Name[0].Name)
 	var relationships []Relationship
 
 	for _, parent := range home.Parents {
@@ -108,363 +119,94 @@ func findSiblings(home *types.Individual) []Relationship {
 
 // findChildren recursively returns a slice of Relationship representing
 // an Individual's children (and their children) to calculate cousinship
-func findChildren(home *types.Individual) []Relationship {
+func findChildren(home *types.Individual, generation int, removed ...int) []Relationship {
+	fmt.Printf("Finding children for %s, generation %d, %d removed\n", home.Name[0].Name, generation, removed)
 	var relationships []Relationship
+
+	// Use a variadic param for generation so the initial call
+	// doesn't need to specify the generation
+	var _removed = 0
+	if len(removed) == 0 {
+		_removed = 0
+	} else {
+		_removed = removed[0] + 1
+	}
+
+	/* TODO: Figure out how to deal with step-children and half-siblings
+	* Maybe merge the (n) families and keep a count of how many families the
+	* child appears in. If occurrences < n then they are half-siblings to
+	 */
+	for _, family := range home.Family {
+		for _, child := range family.Family.Child {
+			if child != nil && home.Xref != child.Xref {
+				relation := Relationship{
+					Xref:         child.Xref,
+					Person:       *child,
+					Generations:  generation,
+					Removed:      _removed,
+					Relationship: getChildRelationship(generation, _removed, child),
+				}
+				fmt.Printf("Child: %s (%d/%d)\n", child.Name[0].Name, generation, _removed)
+				relationships = append(relationships, relation)
+
+				// for _, family := range child.Family {
+				// 	for _, ch := range family.Family.Child {
+				// 		relationships = append(relationships, findChildren(ch, generation, _removed)...)
+				// 	}
+				// }
+			}
+
+		}
+	}
 
 	return relationships
 }
 
-// // calculateRelationship will compare two Individuals and determine
-// // the relationship between them, if any is found.
-// func calculateRelationship(home types.Individual, target types.Individual) string {
+// findAncestralRelationship finds the relationship between an Individual and
+// a common Ancestor
+func findAncestralRelationship(home *types.Individual, ancestor *types.Individual, generation int) *Relationship {
+	var relationship = Relationship{
+		Xref:    home.Xref,
+		Person:  *home,
+		Removed: 0,
+	}
 
-// 	if home.Xref == target.Xref {
-// 		return "Self"
-// 	}
+	generation++
+	for _, parent := range home.Parents {
+		if parent.Family.Husband != nil {
+			if parent.Family.Husband.Xref == ancestor.Xref {
+				relationship.Generations = generation
+				relationship.Relationship = getAncestorRelationship(generation, "M")
+				return &relationship
+			}
+		}
 
-// 	var generation = 0
-// 	var removed = 0
-// 	// var err error
-// 	var people []types.Individual
-// 	var siblings []types.Individual
-// 	// var person = home
+		if parent.Family.Wife != nil {
+			if parent.Family.Wife.Xref == ancestor.Xref {
+				relationship.Generations = generation
+				relationship.Relationship = getAncestorRelationship(generation, "F")
+				return &relationship
+			}
+		}
 
-// 	// Seed the loop
-// 	people = append(people, home)
+		if parent.Family.Husband != nil {
+			var r = findAncestralRelationship(home, parent.Family.Husband, generation)
+			if r != nil {
+				return r
+			}
+		}
 
-// 	// Loop through each generation
-// 	for {
-// 		var relationships []Relationship // Relationships in this generation
+		if parent.Family.Wife != nil {
+			var r = findAncestralRelationship(home, parent.Family.Wife, generation)
+			if r != nil {
+				return r
+			}
+		}
 
-// 		// Check the parents
-// 		// for _, p := range person.Parents {
-// 		for _, p1 := range people {
-// 			for _, p := range p1.Parents {
-// 				fmt.Printf("Scanning parents of %s\n", p1.Name[0].Name)
-// 				fmt.Printf("Generation: %d\n", generation)
-// 				/*
-// 				 * To scan a single generation, we scan the parents
-// 				 * and then scan their children.
-// 				 * For each child, we then scan their children (incremending removed)
-// 				 */
+	}
 
-// 				if p.Family.Husband != nil {
-// 					var relation = ""
-// 					if generation == 0 {
-// 						relation = "Father"
-// 					} else if generation == 1 {
-// 						relation = "Grandfather"
-// 					} else if generation == 2 {
-// 						relation = "Great-Grandfather"
-// 					} else {
-// 						relation = fmt.Sprintf("%s Great-Grandfather", humanize.Ordinal(generation-1))
-// 					}
-
-// 					r := Relationship{
-// 						Xref:         p.Family.Husband.Xref,
-// 						Person:       *p.Family.Husband,
-// 						Generations:  generation,
-// 						Relationship: relation,
-// 					}
-// 					relationships = append(relationships, r)
-
-// 					people = append(people, *p.Family.Husband)
-// 				}
-
-// 				if p.Family.Wife != nil {
-// 					r := Relationship{
-// 						Xref:         p.Family.Wife.Xref,
-// 						Person:       *p.Family.Wife,
-// 						Generations:  generation,
-// 						Relationship: getGeneration(generation, "F"),
-// 					}
-// 					relationships = append(relationships, r)
-
-// 					people = append(people, *p.Family.Wife)
-// 				}
-
-// 				// Check the children
-// 				if p.Family.Child != nil {
-// 					fmt.Printf("Scanning children\n")
-// 					for _, child := range p.Family.Child {
-// 						if child != nil {
-// 							var relation = ""
-// 							if generation == 0 {
-// 								relation = "Sibling"
-// 								if child.Sex == "M" {
-// 									relation = "Brother"
-// 								} else if child.Sex == "F" {
-// 									relation = "Sister"
-// 								}
-// 							} else if generation == 1 {
-// 								if child.Sex == "M" {
-// 									relation = "Uncle"
-// 								} else if child.Sex == "F" {
-// 									relation = "Aunt"
-// 								}
-// 							} else if generation == 2 {
-// 								if child.Sex == "M" {
-// 									relation = "Great-Uncle"
-// 								} else if child.Sex == "F" {
-// 									relation = "Great-Aunt"
-// 								}
-// 							} else if generation == 3 {
-// 								if child.Sex == "M" {
-// 									relation = "Great-Granduncle"
-// 								} else if child.Sex == "F" {
-// 									relation = "Great-Grandaunt"
-// 								}
-// 							} else {
-// 								if child.Sex == "M" {
-// 									relation = fmt.Sprintf("%s Great-Uncle", humanize.Ordinal(generation-1))
-// 								} else if child.Sex == "F" {
-// 									relation = fmt.Sprintf("%s Great-Aunt", humanize.Ordinal(generation-1))
-// 								}
-// 							}
-
-// 							r := Relationship{
-// 								Xref:         child.Xref,
-// 								Person:       *child,
-// 								Generations:  generation,
-// 								Relationship: relation,
-// 							}
-// 							relationships = append(relationships, r)
-
-// 							siblings = append(siblings, *child)
-// 						}
-// 					}
-// 				}
-
-// 				// Check the children's children
-// 				fmt.Printf("Scanning for cousins\n")
-// 				relationships = nil
-// 				var cgeneration = 1
-// 				var family = p.Family
-
-// 				// var scanCousins func(types.Individual, int, int) (string, error)
-// 				// scanCousins = func(person types.Individual, generation int, removed int) (string, error) {
-
-// 				// }
-
-// 				// // Get a list of this generation's children
-// 				// cousins := make([]*types.Individual, len(p.Family.Child))
-// 				// copy(cousins, p.Family.Child)
-
-// 				// for {
-
-// 				// 	for cousin := range cousins {
-// 				// 		relationship, err := scanCousins(cousin, cgeneration, removed)
-// 				// 	}
-
-// 				// 	cgeneration++
-// 				// }
-// 				// Check for match
-
-// 				// For each child, repeat the match check (resursive?)
-
-// 				for {
-// 					// for _, child := range p.Family.Child {
-// 					for _, child := range family.Child {
-// 						for _, f := range child.Family {
-// 							if f.Family.Child != nil {
-// 								for _, c := range f.Family.Child {
-// 									var relationship = ""
-// 									if removed == 0 {
-// 										relationship = fmt.Sprintf("%s Cousin", humanize.Ordinal(cgeneration))
-// 									} else {
-// 										relationship = fmt.Sprintf("%s Cousin %dx Removed", humanize.Ordinal(cgeneration), removed)
-// 									}
-// 									r := Relationship{
-// 										Xref:         c.Xref,
-// 										Person:       *c,
-// 										Generations:  generation,
-// 										Removed:      removed,
-// 										Relationship: relationship,
-// 									}
-// 									relationships = append(relationships, r)
-// 								}
-// 							}
-// 						}
-// 						removed++
-
-// 					}
-
-// 					fmt.Printf("%d relationships to check\n", len(relationships))
-// 					for _, relationship := range relationships {
-// 						if target.Xref == relationship.Xref {
-// 							fmt.Printf("Found target person: %s - %s\n", relationship.Person.Name[0].Name, relationship.Relationship)
-// 							return relationship.Relationship
-// 						}
-// 					}
-// 					relationships = nil
-// 					removed = 0
-// 					if len(relationships) == 0 {
-// 						fmt.Printf("No relationships found at depth %d.\n", removed)
-// 						break
-// 					}
-// 					fmt.Printf("%d relationships to check\n", len(relationships))
-// 					cgeneration++
-// 				}
-
-// 			}
-
-// 			fmt.Printf("%d relationships to check\n", len(relationships))
-// 			for _, relationship := range relationships {
-// 				if target.Xref == relationship.Xref {
-// 					fmt.Printf("Found target person: %s\n", relationship.Relationship)
-// 					return relationship.Relationship
-// 				}
-// 			}
-
-// 			// Clear the relationships we've already checked
-// 			relationships = nil
-
-// 		}
-
-// 		// fmt.Printf("len=%d cap=%d %v\n", len(siblings), cap(siblings), siblings)
-// 		if len(people) == 0 {
-// 			fmt.Printf("No more people.\n")
-// 			break
-// 			// } else {
-// 			// 	fmt.Printf("Before: %d people\n", len(people))
-// 			// 	// Take a person from the array
-// 			// 	person = people[0]
-// 			// 	people = people[1:]
-// 			// 	fmt.Printf("After: %d people\n", len(people))
-
-// 		} else {
-// 			fmt.Printf("%d people to check\n", len(people))
-// 		}
-
-// 		fmt.Printf("Incrementing generation %d => %d\n", generation, generation+1)
-// 		generation++
-// 	}
-
-// 	// // Figure out how many generations there are between the two Individuals
-// 	// var scanGeneration func(types.Individual, int, int) (string, error)
-// 	// // var scanChildren func(types.Individual, int, int) (int, error)
-
-// 	// scanGeneration = func(person types.Individual, generation int, removed int) (string, error) {
-// 	// 	var relationships []Relationship
-
-// 	// 	for _, p := range person.Parents {
-// 	// 		/*
-// 	// 		 * To scan a single generation, we scan the parents
-// 	// 		 * and then scan their children.
-// 	// 		 * For each child, we then scan their children (incremending removed)
-// 	// 		 */
-
-// 	// 		if p.Family.Husband != nil {
-// 	// 			r := Relationship{
-// 	// 				Xref:         p.Family.Husband.Xref,
-// 	// 				Person:       *p.Family.Husband,
-// 	// 				Generations:  generation,
-// 	// 				Relationship: "Father",
-// 	// 			}
-// 	// 			relationships = append(relationships, r)
-
-// 	// 			people = append(people, *p.Family.Husband)
-// 	// 		}
-
-// 	// 		if p.Family.Wife != nil {
-// 	// 			r := Relationship{
-// 	// 				Xref:         p.Family.Wife.Xref,
-// 	// 				Person:       *p.Family.Wife,
-// 	// 				Generations:  generation,
-// 	// 				Relationship: "Mother",
-// 	// 			}
-// 	// 			relationships = append(relationships, r)
-
-// 	// 			people = append(people, *p.Family.Wife)
-// 	// 		}
-
-// 	// 		if p.Family.Child != nil {
-// 	// 			for _, child := range p.Family.Child {
-// 	// 				if child != nil {
-// 	// 					var relation = "Sibling"
-// 	// 					if child.Sex == "M" {
-// 	// 						relation = "Brother"
-// 	// 					} else if child.Sex == "F" {
-// 	// 						relation = "Sister"
-// 	// 					}
-// 	// 					r := Relationship{
-// 	// 						Xref:         child.Xref,
-// 	// 						Person:       *child,
-// 	// 						Generations:  generation,
-// 	// 						Relationship: relation,
-// 	// 					}
-// 	// 					relationships = append(relationships, r)
-
-// 	// 					people = append(people, *child)
-// 	// 				}
-// 	// 			}
-// 	// 		}
-// 	// 		fmt.Printf("len=%d cap=%d %v\n", len(people), cap(people), people)
-// 	// 		fmt.Printf("len=%d cap=%d %v\n", len(relationships), cap(relationships), relationships)
-
-// 	// 		for _, relationship := range relationships {
-// 	// 			if target.Xref == relationship.Xref {
-// 	// 				fmt.Printf("Found target person: %s\n", relationship.Relationship)
-// 	// 				return relationship.Relationship, nil
-// 	// 			}
-// 	// 		}
-
-// 	// 		// If we hit this point, we didn't find the person in this generation. Scan down through the children first
-// 	// 		// generation + removed before incrementing generation and starting over
-
-// 	// 		relationships = nil
-// 	// 		if p.Family.Child != nil {
-// 	// 			// Loop until we run out of children
-// 	// 			for {
-// 	// 				for _, child := range p.Family.Child {
-// 	// 					for _, f := range child.Family {
-// 	// 						if f.Family.Child != nil {
-// 	// 							for _, c := range f.Family.Child {
-// 	// 								var relationship = ""
-// 	// 								if removed == 0 {
-// 	// 									relationship = fmt.Sprintf("%s Cousin", humanize.Ordinal(generation))
-// 	// 								} else {
-// 	// 									relationship = fmt.Sprintf("%s Cousin %dx Removed", humanize.Ordinal(generation), removed)
-// 	// 								}
-// 	// 								r := Relationship{
-// 	// 									Xref:         c.Xref,
-// 	// 									Person:       *c,
-// 	// 									Generations:  generation,
-// 	// 									Relationship: relationship,
-// 	// 								}
-// 	// 								relationships = append(relationships, r)
-// 	// 							}
-// 	// 						}
-// 	// 					}
-// 	// 				}
-
-// 	// 				if len(relationships) == 0 {
-// 	// 					fmt.Printf("No relationships found at depth %d.\n", removed)
-// 	// 					break
-// 	// 				}
-
-// 	// 				removed++
-// 	// 			}
-
-// 	// 		} else {
-// 	// 			fmt.Println("This generation's children have no children.")
-// 	// 		}
-// 	// 	}
-
-// 	// 	return "", errors.New("individual not found")
-// 	// }
-
-// 	// var relationship = ""
-// 	// relationship, err = scanGeneration(home, generation, removed)
-// 	// if err != nil {
-// 	// 	return ""
-// 	// } else {
-// 	// 	return relationship
-// 	// 	// return "generation goes here"
-// 	// 	// return getGeneration(generation, target.Sex)
-// 	// }
-// 	return ""
-// }
+	return nil
+}
 
 func getAncestorRelationship(generation int, gender string) string {
 	var description = ""
@@ -498,11 +240,11 @@ func getAncestorRelationship(generation int, gender string) string {
 	} else {
 		// Calculate the nth great-grandparant
 		if gender == "M" {
-			description = fmt.Sprintf("%s Great-Grandfather", humanize.Ordinal(generation-1))
+			description = fmt.Sprintf("%s Great-Grandfather", humanize.Ordinal(generation-2))
 		} else if gender == "F" {
-			description = fmt.Sprintf("%s Great-Grandmother", humanize.Ordinal(generation-1))
+			description = fmt.Sprintf("%s Great-Grandmother", humanize.Ordinal(generation-2))
 		} else {
-			description = fmt.Sprintf("%s Great-Grandarent", humanize.Ordinal(generation-1))
+			description = fmt.Sprintf("%s Great-Grandarent", humanize.Ordinal(generation-2))
 		}
 
 	}
@@ -518,5 +260,52 @@ func getSiblingRelationship(sibling *types.Individual) string {
 	} else if sibling.Sex == "F" {
 		relation = "Sister"
 	}
+	return relation
+}
+
+func getChildRelationship(generation int, removed int, child *types.Individual) string {
+	var relation = ""
+
+	if generation == 0 {
+		if removed == 0 {
+			if child.Sex == "M" {
+				relation = "Brother"
+			} else if child.Sex == "F" {
+				relation = "Sister"
+			}
+		} else if removed == 1 {
+			if child.Sex == "M" {
+				relation = "Uncle"
+			} else if child.Sex == "F" {
+				relation = "Aunt"
+			}
+		} else if removed == 2 {
+			if child.Sex == "M" {
+				relation = "Great-Uncle"
+			} else if child.Sex == "F" {
+				relation = "Great-Aunt"
+			}
+		} else if removed == 3 {
+			if child.Sex == "M" {
+				relation = "Great-Granduncle"
+			} else if child.Sex == "F" {
+				relation = "Great-Grandaunt"
+			}
+		} else {
+			if child.Sex == "M" {
+				relation = fmt.Sprintf("%s Great-Granduncle", humanize.Ordinal(removed-2))
+			} else if child.Sex == "F" {
+				relation = fmt.Sprintf("%s Great-Grandaunt", humanize.Ordinal(removed-2))
+			}
+		}
+
+	} else {
+		if removed == 0 {
+			relation = fmt.Sprintf("%s Cousin", humanize.Ordinal(generation))
+		} else {
+			relation = fmt.Sprintf("%s Cousin %dx Removed", humanize.Ordinal(generation), removed)
+		}
+	}
+
 	return relation
 }
