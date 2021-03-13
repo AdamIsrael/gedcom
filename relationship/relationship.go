@@ -1,4 +1,4 @@
-package main
+package relationship
 
 import (
 	"fmt"
@@ -17,7 +17,7 @@ type Relationship struct {
 	Relationship string
 }
 
-func calculateRelationship(home types.Individual, target types.Individual) string {
+func CalculateRelationship(home types.Individual, target types.Individual) string {
 	var relationship = ""
 	// iterate through each generation to find a common ancestor
 	a := findAncestors(&home, 0)
@@ -43,8 +43,12 @@ func calculateRelationship(home types.Individual, target types.Individual) strin
 					relationship = getChildRelationship(ancestorB.Generations, removed, &target)
 				} else {
 					removed := ancestorB.Generations - ancestorA.Generations
+					if ancestorA.Generations == 0 {
+						relationship = getSiblingChildRelationship(ancestorB.Generations, removed, &target)
+					} else {
+						relationship = getChildRelationship(ancestorA.Generations, removed, &target)
 
-					relationship = getChildRelationship(ancestorA.Generations, removed, &target)
+					}
 
 				}
 
@@ -73,7 +77,7 @@ func findAncestors(home *types.Individual, generation int) []Relationship {
 				Person:       *parent.Family.Husband,
 				Generations:  generation,
 				Removed:      0,
-				Relationship: getAncestorRelationship(generation+1, "M"),
+				Relationship: GetAncestorRelationship(generation+1, "M"),
 			}
 			relationships = append(relationships, relation)
 			relationships = append(relationships, findAncestors(parent.Family.Husband, generation+1)...)
@@ -85,7 +89,7 @@ func findAncestors(home *types.Individual, generation int) []Relationship {
 				Person:       *parent.Family.Wife,
 				Generations:  generation,
 				Removed:      0,
-				Relationship: getAncestorRelationship(generation+1, "F"),
+				Relationship: GetAncestorRelationship(generation+1, "F"),
 			}
 			relationships = append(relationships, relation)
 			relationships = append(relationships, findAncestors(parent.Family.Wife, generation+1)...)
@@ -176,7 +180,7 @@ func findAncestralRelationship(home *types.Individual, ancestor *types.Individua
 		if parent.Family.Husband != nil {
 			if parent.Family.Husband.Xref == ancestor.Xref {
 				relationship.Generations = generation
-				relationship.Relationship = getAncestorRelationship(generation, "M")
+				relationship.Relationship = GetAncestorRelationship(generation, "M")
 				return &relationship
 			}
 		}
@@ -184,7 +188,7 @@ func findAncestralRelationship(home *types.Individual, ancestor *types.Individua
 		if parent.Family.Wife != nil {
 			if parent.Family.Wife.Xref == ancestor.Xref {
 				relationship.Generations = generation
-				relationship.Relationship = getAncestorRelationship(generation, "F")
+				relationship.Relationship = GetAncestorRelationship(generation, "F")
 				return &relationship
 			}
 		}
@@ -208,7 +212,7 @@ func findAncestralRelationship(home *types.Individual, ancestor *types.Individua
 	return nil
 }
 
-func getAncestorRelationship(generation int, gender string) string {
+func GetAncestorRelationship(generation int, gender string) string {
 	var description = ""
 
 	if generation == 0 {
@@ -259,6 +263,53 @@ func getSiblingRelationship(sibling *types.Individual) string {
 		relation = "Brother"
 	} else if sibling.Sex == "F" {
 		relation = "Sister"
+	}
+	return relation
+}
+
+//  getSiblingChildRelationship returns the relationship between self and a child of a siling
+func getSiblingChildRelationship(generation int, removed int, child *types.Individual) string {
+	var relation = ""
+
+	if generation == 1 {
+		if child.Sex == "M" {
+			relation = "Nephew"
+		} else if child.Sex == "F" {
+			relation = "Niece"
+		} else {
+			// TODO: Find a gender-neutral term
+			relation = "Nephew/Niece"
+		}
+	} else if generation == 2 {
+		if child.Sex == "M" {
+			relation = "Grandnephew"
+		} else if child.Sex == "F" {
+			relation = "Grandniece"
+		} else {
+			// TODO: Find a gender-neutral term
+			relation = "Grandnephew/Grandniece"
+		}
+		// grand niece/nephew
+	} else if generation == 3 {
+		if child.Sex == "M" {
+			relation = "Great-Grandnephew"
+		} else if child.Sex == "F" {
+			relation = "Great-Grandniece"
+		} else {
+			// TODO: Find a gender-neutral term
+			relation = "Great-Grandnephew/Grandniece"
+		}
+		// great-grandniece/nephew
+	} else {
+		if child.Sex == "M" {
+			relation = fmt.Sprintf("%s Great-Grandnephew", humanize.Ordinal(removed-2))
+		} else if child.Sex == "F" {
+			relation = fmt.Sprintf("%s Great-Grandniece", humanize.Ordinal(removed-2))
+		} else {
+			// TODO: Find a gender-neutral term
+			relation = fmt.Sprintf("%s Great-Grandnephew/Grandniece", humanize.Ordinal(removed-2))
+		}
+		// nth great-grandniece/nephew
 	}
 	return relation
 }

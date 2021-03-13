@@ -6,14 +6,17 @@ import (
 	"strings"
 
 	"github.com/adamisrael/gedcom"
+	"github.com/adamisrael/gedcom/date"
+	"github.com/adamisrael/gedcom/relationship"
+	"github.com/adamisrael/gedcom/search"
 	"github.com/adamisrael/gedcom/types"
 	// "gedcom"
 )
 
-var dateFormats = []string{
-	"12 Feb 2006",
-	"03 February 2013",
-}
+// var dateFormats = []string{
+// 	"12 Feb 2006",
+// 	"03 February 2013",
+// }
 
 func check(e error) {
 	if e != nil {
@@ -38,29 +41,54 @@ func main() {
 
 	g := gedcom.Gedcom(*gedcomFile)
 
-	// // Map families
-	// for _, f := range g.Family {
-	// 	fmt.Println(f.Xref)
+	var homeIndividual = search.FindHomeIndividual(*g)
+
+	// var test = make(map[*types.Individual]string)
+
+	// // TODO: Move this into relationship_test.go
+	// // TODO: Replace this with sample data
+	// test[&findIndividualsByName(*g, "Matthew Bryan /Israel/")[0]] = "Brother"
+
+	// test[&findIndividualsByName(*g, "Deborah Sue /Appleyard/")[0]] = "Aunt"
+	// test[&findIndividualsByName(*g, "Alice Francis \"Lissie\" /Allen/")[0]] = "Great-Aunt"
+
+	// test[&findIndividualsByName(*g, "Donald Martin /Israel/")[0]] = "Father"
+	// test[&findIndividualsByName(*g, "Roy Edgar /Appleyard/")[0]] = "Grandfather"
+	// test[&findIndividualsByName(*g, "Edgar Andas /Appleyard/")[0]] = "Great-Grandfather"
+	// test[&findIndividualsByName(*g, "Joseph Henry /Appleyard/")[0]] = "2nd Great-Grandfather"
+	// test[&findIndividualsByName(*g, "Alois /Auer/")[0]] = "4th Great-Grandfather"
+	// test[&findIndividualsByName(*g, "Georg Salas /Auer/")[0]] = "5th Great-Grandfather"
+
+	// test[&findIndividualsByName(*g, "Lin /Meyer/")[0]] = "1st Cousin 1x Removed"
+	// test[&findIndividualsByName(*g, "Betty Ann /Appleyard/")[0]] = "1st Cousin 2x Removed"
+
+	// test[&findIndividualsByName(*g, "Edith May /Appleyard/")[0]] = "Great-Grandaunt"
+	// test[&findIndividualsByName(*g, "Louisa /Appleyard/")[0]] = "3rd Great-Grandaunt"
+	// test[&findIndividualsByName(*g, "Audrey Ordery /Appleyard/")[0]] = "4th Great-Grandaunt"
+	// test[&findIndividualsByName(*g, "Frances \"Fanny\" /Appleyard/")[0]] = "6th Great-Grandaunt"
+
+	// test[&findIndividualsByName(*g, "William Kenneth /Rusk/")[0]] = "1st Cousin 2x Removed"
+	// test[&findIndividualsByName(*g, "Diane Lee /Rusk/")[0]] = "2nd Cousin 1x Removed"
+	// test[&findIndividualsByName(*g, "Arthur Edward /Appleyard/")[0]] = "2nd Cousin 4x Removed"
+
+	// test[&findIndividualsByName(*g, "Melissa /Moore/")[0]] = "3rd Cousin"
+	// test[&findIndividualsByName(*g, "Maisie /Appleyard/")[0]] = "4th Cousin 2x Removed"
+	// test[&findIndividualsByName(*g, "Dorothy /Jones/")[0]] = "5th Cousin"
+
+	// test[&findIndividualsByName(*g, "/Brocklesby-Atkinson/")[0]] = "5th Cousin 1x Removed"
+
+	// for match := range test {
+	// 	var relation = calculateRelationship(homeIndividual, *match)
+
+	// 	fmt.Printf("\n** Relationship to %s: %s **\n\n", match.Name[0].Name, relation)
+	// 	if relation != test[match] {
+	// 		fmt.Printf("Relation to %s doesn't match: %s != %s\n", match.Name[0].Name, relation, test[match])
+	// 		return
+	// 	}
 	// }
 
-	var homeIndividual = findHomeIndividual(*g)
+	// var matches = findIndividualsByName(*g, "Solomon /Israel/") // No relation
 
-	// var matches = findIndividualsByName(*g, "Wilhelmine Louise Auguste /Berlin/")
-	// var matches = findIndividualsByName(*g, "Matthew Bryan /Israel/") // Brother
-	// var matches = findIndividualsByName(*g, "Deborah Sue /Appleyard/") // Aunt
-	// var matches = findIndividualsByName(*g, "Joseph Henry /Appleyard/") // 2nd great-grandfather
-	// var matches = findIndividualsByName(*g, "Edith May /Appleyard/") // Great-grandaunt
-	// var matches = findIndividualsByName(*g, "Alice Francis /Allen/") // Great-aunt
-	// var matches = findIndividualsByName(*g, "Betty Ann /Appleyard/") // 1st Cousin 2x Removed
-	var matches = findIndividualsByName(*g, "Diane Lee /Rusk/") // 2nd cousin 1x removed
-
-	fmt.Printf("%+v\n", matches)
-
-	// var gen = calculateGeneration(homeIndividual, matches[0])
-	var gen = calculateRelationshipTest(homeIndividual, matches[0])
-	// var gen = calculateRelationship(homeIndividual, homeIndividual)
-
-	fmt.Printf("Relationship: %s\n", gen)
 	fmt.Printf("Home Individual: %q\n", homeIndividual.Name[0].Name)
 
 	for _, i := range g.Individual {
@@ -87,7 +115,7 @@ func main() {
 			// currentTime := time.Now()
 
 			for _, event := range i.Event {
-				if isSameDay(*event) {
+				if date.IsSameDay(*event) {
 					switch event.Tag {
 					case "BIRT":
 						fmt.Printf("%s was born on %s\n", i.Name[0].Name, event.Date)
@@ -101,12 +129,12 @@ func main() {
 	}
 
 	fmt.Printf("%d - %s\n", 1, homeIndividual.Name[0].Name)
-	printAncestors(homeIndividual, 1)
+	printAncestors(*homeIndividual, 1)
 }
 
 func printAnniversary(i types.Individual) {
 	for _, event := range i.Event {
-		if isSameDay(*event) {
+		if date.IsSameDay(*event) {
 			switch event.Tag {
 			case "BIRT":
 				fmt.Printf("%s was born on %s\n", i.Name[0].Name, event.Date)
@@ -124,10 +152,10 @@ func printAncestors(i types.Individual, generation int) {
 		if p != nil {
 			// Parents
 			if p.Family.Husband != nil {
-				fmt.Printf("%s%d └── %s (%s)\n", strings.Repeat("   ", generation), generation, p.Family.Husband.Name[0].Name, getAncestorRelationship(generation, "M"))
+				fmt.Printf("%s%d └── %s (%s)\n", strings.Repeat("   ", generation), generation, p.Family.Husband.Name[0].Name, relationship.GetAncestorRelationship(generation, "M"))
 			}
 			if p.Family.Wife != nil {
-				fmt.Printf("%s%d ┌── %s (%s)\n", strings.Repeat("   ", generation), generation, p.Family.Wife.Name[0].Name, getAncestorRelationship(generation, "F"))
+				fmt.Printf("%s%d ┌── %s (%s)\n", strings.Repeat("   ", generation), generation, p.Family.Wife.Name[0].Name, relationship.GetAncestorRelationship(generation, "F"))
 				// printAnniversary(*p.Family.Wife)
 				// printAncestors(*p.Family.Wife, generation+1)
 			}

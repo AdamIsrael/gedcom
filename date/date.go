@@ -1,19 +1,17 @@
-package main
+package date
 
 import (
 	"time"
 
 	"github.com/adamisrael/gedcom/types"
-
-	"github.com/araddon/dateparse"
 )
 
 // isSameDay checks if the event occured on today's month/day
-func isSameDay(event types.Event) bool {
+func IsSameDay(event types.Event) bool {
 	if len(event.Date) > 0 {
-		t, err := dateparse.ParseLocal(event.Date)
+		t, err := Parse(event.Date)
 		if err == nil {
-			_, month, day := dateDiff(t, time.Now())
+			_, month, day := DateDiff(t, time.Now())
 			if month == 0 && day == 0 {
 				return true
 			}
@@ -22,7 +20,7 @@ func isSameDay(event types.Event) bool {
 	return false
 }
 
-func dateDiff(a, b time.Time) (year, month, day int) {
+func DateDiff(a, b time.Time) (year, month, day int) {
 	if a.Location() != b.Location() {
 		b = b.In(a.Location())
 	}
