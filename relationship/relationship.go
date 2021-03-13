@@ -7,6 +7,14 @@ import (
 	"github.com/dustin/go-humanize"
 )
 
+/*
+Handle all calculations to determine the relationship between Individuals
+in a tree.
+
+TODO: Support half relations
+
+*/
+
 // Relationship represents the genealogical relationship
 // between two individuals, used for calculations
 type Relationship struct {
