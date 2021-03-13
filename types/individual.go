@@ -1,6 +1,11 @@
 package types
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+
+	"github.com/araddon/dateparse"
+)
 
 // Individual contains the Individual record
 type Individual struct {
@@ -19,6 +24,42 @@ func (i Individual) IsValid() bool {
 	valid := true
 
 	return valid
+}
+
+func (i Individual) Birth() *time.Time {
+	var t *time.Time
+
+	for _, event := range i.Event {
+		switch event.Tag {
+		case "BIRT":
+			t, err := dateparse.ParseLocal(event.Date)
+			if err == nil {
+				return &t
+			}
+		}
+	}
+	return t
+}
+
+func (i Individual) Death() *time.Time {
+	var t *time.Time
+
+	for _, event := range i.Event {
+		switch event.Tag {
+		case "DEAT":
+			t, err := dateparse.ParseLocal(event.Date)
+			if err == nil {
+				return &t
+			}
+		}
+	}
+	return t
+}
+
+// Relationship calculates the relation between two individuals
+func (i Individual) Relationship(b Individual) string {
+
+	return ""
 }
 
 func (i Individual) String() string {
