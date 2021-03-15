@@ -2060,7 +2060,7 @@
 2 PLAC Cornwall, Litchfield, Connecticut, United States
 1 SEX F
 1 NAME Sarah /(Whiting) Whitney/
-1 FAMC @F39@
+1 FAMC @F53@
 1 FAMS @F21@
 0 @P43@ INDI 
 1 BIRT 
@@ -2215,7 +2215,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=48
 1 FAMS @F13@
-1 FAMS @F41@
+1 FAMS @F55@
 0 @P49@ INDI 
 1 NAME Francis Lynn /ISGRIGG/
 2 SOUR @S1231209670@
@@ -2354,7 +2354,7 @@
 2 PAGE Ancestry Family Tree
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=51
-1 FAMC @F40@
+1 FAMC @F54@
 1 FAMS @F16@
 1 FAMS @F17@
 0 @P52@ INDI 
@@ -2617,7 +2617,7 @@
 3 PAGE Year: 1910; Census Place: Carson City, Ormsby, Nevada; Roll: T624_859; Page: 8A; Enumeration District: 0061; FHL microfilm: 1374872
 3 _APID 1,7884::190088877
 1 SEX M
-1 FAMC @F41@
+1 FAMC @F55@
 0 @P61@ INDI 
 1 BIRT 
 2 DATE abt 1896
@@ -2636,7 +2636,7 @@
 3 PAGE Year: 1910; Census Place: Carson City, Ormsby, Nevada; Roll: T624_859; Page: 8A; Enumeration District: 0061; FHL microfilm: 1374872
 3 _APID 1,7884::190088876
 1 SEX M
-1 FAMC @F41@
+1 FAMC @F55@
 0 @P62@ INDI 
 1 BIRT 
 2 DATE 6 Sep 1812
@@ -2651,7 +2651,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=62
 1 FAMC @F15@
-1 FAMS @F33@
+1 FAMS @F34@
 0 @P63@ INDI 
 1 BIRT 
 2 DATE 9 Mar 1748
@@ -2665,7 +2665,7 @@
 2 PAGE Ancestry Family Tree
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=63
-1 FAMC @F30@
+1 FAMC @F31@
 1 FAMS @F23@
 0 @P64@ INDI 
 1 BIRT 
@@ -2776,8 +2776,8 @@
 2 PAGE Ancestry Family Tree
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=71
-1 FAMC @F33@
-1 FAMS @F34@
+1 FAMC @F34@
+1 FAMS @F35@
 0 @P72@ INDI 
 1 BIRT 
 2 DATE 8 Jul 1804
@@ -2791,7 +2791,7 @@
 2 PAGE Ancestry Family Tree
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=72
-1 FAMS @F33@
+1 FAMS @F34@
 0 @P73@ INDI 
 1 BIRT 
 2 DATE 9/14/1842
@@ -2805,7 +2805,7 @@
 2 PAGE Ancestry Family Tree
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=73
-1 FAMC @F33@
+1 FAMC @F34@
 0 @P74@ INDI 
 1 BIRT 
 2 DATE 12 Mar 1841
@@ -2818,7 +2818,7 @@
 2 PAGE Ancestry Family Tree
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=74
-1 FAMC @F33@
+1 FAMC @F34@
 0 @P75@ INDI 
 1 BIRT 
 2 DATE 29 Jun 1836
@@ -2832,7 +2832,7 @@
 2 PAGE Ancestry Family Tree
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=75
-1 FAMC @F33@
+1 FAMC @F34@
 0 @P76@ INDI 
 1 BIRT 
 2 DATE 10 Dec 1832
@@ -2846,7 +2846,7 @@
 2 PAGE Ancestry Family Tree
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=76
-1 FAMC @F33@
+1 FAMC @F34@
 0 @P77@ INDI 
 1 BIRT 
 2 DATE 12 Jun 1830
@@ -2860,7 +2860,7 @@
 2 PAGE Ancestry Family Tree
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=77
-1 FAMC @F33@
+1 FAMC @F34@
 0 @P78@ INDI 
 1 BIRT 
 2 DATE 13 Jan 1834
@@ -2874,11 +2874,11 @@
 2 PAGE Ancestry Family Tree
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=78
-1 FAMC @F33@
+1 FAMC @F34@
 0 @P79@ INDI 
 1 SEX M
 1 NAME /Marsh/
-1 FAMS @F40@
+1 FAMS @F54@
 0 @P80@ INDI 
 1 NAME Richard W /Kennet/
 2 SOUR @S1235445809@
@@ -2947,7 +2947,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=83
 1 FAMC @F20@
-1 FAMS @F31@
+1 FAMS @F32@
 0 @P84@ INDI 
 1 NAME John Wallace /Talbott/
 2 SOUR @S1256986111@
@@ -2990,7 +2990,7 @@
 2 PLAC Stamford, Fairfield, Connecticut, USA
 1 SEX F
 1 NAME Abigail /Holly/
-1 FAMS @F39@
+1 FAMS @F53@
 0 @P87@ INDI 
 1 BIRT 
 2 DATE 28 May 1710
@@ -3014,7 +3014,7 @@
 2 FILE http://trees.ancestry.com/rd?f=image&guid=7b9e91c6-ce34-40da-b36f-7ced1be14ed5&tid=116823582&pid=87
 2 FORM jpg
 2 TITL Mary Sherwood TOMBSTONE
-1 FAMC @F42@
+1 FAMC @F56@
 1 FAMS @F25@
 0 @P88@ INDI 
 1 BIRT 
@@ -3326,7 +3326,7 @@
 2 PAGE Ancestry Family Tree
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=109
-1 FAMC @F29@
+1 FAMC @F30@
 1 FAMS @F27@
 0 @P110@ INDI 
 1 BIRT 
@@ -3351,7 +3351,7 @@
 2 PLAC Stratford, Fairfield, Connecticut, United States
 1 SEX F
 1 NAME Ruth /Wilcoxson/
-1 FAMS @F42@
+1 FAMS @F56@
 0 @P112@ INDI 
 1 BIRT 
 2 DATE 6 Apr 1720
@@ -3521,7 +3521,7 @@
 2 PLAC Fairfield, Fairfield, Connecticut, USA
 1 SEX F
 1 NAME Mary /Fitch/
-1 FAMS @F29@
+1 FAMS @F30@
 0 @P125@ INDI 
 1 BIRT 
 2 DATE 1644
@@ -3531,7 +3531,7 @@
 2 PLAC Bridgeport, Fairfield County, Connecticut, United States of America
 1 SEX M
 1 NAME Matthew /Sherwood/
-1 FAMS @F29@
+1 FAMS @F30@
 0 @P126@ INDI 
 1 BIRT 
 2 DATE 15 Sep 1707
@@ -3729,7 +3729,7 @@
 1 FAMS @F28@
 0 @P140@ INDI 
 1 BIRT 
-2 DATE 1640
+2 DATE 22 Feb 1640
 2 PLAC Springfield, Hampden County, Massachusetts, United States of America
 1 DEAT 
 2 DATE 26 February 1712
@@ -3743,6 +3743,35 @@
 1 FAMS @F28@
 0 @P141@ INDI 
 1 BIRT 
+2 DATE 3 May 1672
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 13 Jun 1750
+2 PLAC Stratford, Fairfield, Connecticut, USA
+1 NAME John Ebenezer /Burr/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=141
+1 FAMC @F28@
+0 @P142@ INDI 
+1 BIRT 
+2 DATE 1665
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 1701
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+1 NAME Nathaniel /Burr/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=142
+1 FAMC @F28@
+1 FAMS @F29@
+0 @P143@ INDI 
+1 BIRT 
 2 DATE 1662
 2 PLAC Fairfield, Fairfield, Connecticut, USA
 1 DEAT 
@@ -3753,25 +3782,25 @@
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=141
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=143
 1 FAMC @F28@
-0 @P142@ INDI 
+0 @P144@ INDI 
 1 NAME Esther /Burr/
 1 SEX F
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=142
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=144
 1 FAMC @F28@
-0 @P143@ INDI 
+0 @P145@ INDI 
 1 NAME Mary /Burr/
 1 SEX F
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=143
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=145
 1 FAMC @F28@
-0 @P144@ INDI 
+0 @P146@ INDI 
 1 BIRT 
 2 DATE 1668
 2 PLAC Fairfield, Fairfield, Connecticut, USA
@@ -3783,23 +3812,9 @@
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=144
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=146
 1 FAMC @F28@
-0 @P145@ INDI 
-1 BIRT 
-2 DATE 3 May 1672
-2 PLAC Fairfield, Fairfield, Connecticut, USA
-1 DEAT 
-2 DATE 13 Jun 1750
-2 PLAC Stratford, Fairfield, Connecticut, USA
-1 NAME Col. John /Burr/
-1 SEX M
-1 SOUR @S1217771584@
-2 PAGE Ancestry Family Tree
-2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=145
-1 FAMC @F28@
-0 @P146@ INDI 
+0 @P147@ INDI 
 1 BIRT 
 2 DATE 1677
 2 PLAC Fairfield, Fairfield, Connecticut, USA
@@ -3807,20 +3822,6 @@
 2 DATE Jun 1722
 2 PLAC Fairfield, Fairfield, Connecticut, USA
 1 NAME Daniel /BURR/
-1 SEX M
-1 SOUR @S1217771584@
-2 PAGE Ancestry Family Tree
-2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=146
-1 FAMC @F28@
-0 @P147@ INDI 
-1 BIRT 
-2 DATE 1665
-2 PLAC Fairfield, Fairfield, Connecticut, United States
-1 DEAT 
-2 DATE 1701
-2 PLAC Fairfield, Fairfield, Connecticut, United States
-1 NAME Nathaniel /Burr/
 1 SEX M
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
@@ -3843,6 +3844,91 @@
 1 FAMC @F28@
 0 @P149@ INDI 
 1 BIRT 
+2 DATE abt 1695
+2 PLAC Fairfield, Fairfield Co, CT, USA
+1 DEAT 
+2 DATE 1 Oct 1740
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 NAME Anna 'Stilliman' /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=149
+1 FAMC @F29@
+0 @P150@ INDI 
+1 BIRT 
+2 DATE 1691
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 1691
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+1 NAME Joseph /Burr/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=150
+1 FAMC @F29@
+0 @P151@ INDI 
+1 BIRT 
+2 DATE 20 Jan 1695
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 1716
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+1 NAME Sarah /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=151
+1 FAMC @F29@
+0 @P152@ INDI 
+1 BIRT 
+2 DATE 15 May 1698
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 1761
+2 PLAC Fairfield, Connecticut, United States
+1 NAME Nathaniel /Burr/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=152
+1 FAMC @F29@
+0 @P153@ INDI 
+1 BIRT 
+2 DATE 5 Apr 1700
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 29 Apr 1776
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+1 NAME Ephraim /Burr/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=153
+1 FAMC @F29@
+1 FAMS @F40@
+0 @P154@ INDI 
+1 BIRT 
+2 DATE 1668
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 1703
+2 PLAC Somme, Picardie, France
+1 NAME Susannah /Lockwood/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=154
+1 FAMS @F29@
+0 @P155@ INDI 
+1 BIRT 
 2 DATE 10 Apr 1720
 2 PLAC Plymouth, Plymouth, Massachusetts, USA
 1 DEAT Killed by Indians
@@ -3850,8 +3936,8 @@
 2 PLAC Friendship, Knox, Maine, USA
 1 SEX F
 1 NAME Hannah /Bradford/
-1 FAMS @F30@
-0 @P150@ INDI 
+1 FAMS @F31@
+0 @P156@ INDI 
 1 BIRT 
 2 DATE 23 Jun 1710
 2 PLAC Plymouth, Plymouth, Massachusetts, USA
@@ -3860,8 +3946,8 @@
 2 PLAC Friendship, Knox, Maine, USA
 1 SEX M
 1 NAME Joshua /Bradford/
-1 FAMS @F30@
-0 @P151@ INDI 
+1 FAMS @F31@
+0 @P157@ INDI 
 1 SEX M
 1 BIRT 
 2 PLAC Ohio, USA
@@ -3872,8 +3958,8 @@
 2 SOUR @S1256986132@
 3 PAGE Ohio Department of Health, Index to Annual Births, 1968-1998; Ohio Department of Health, State Vital Statistics Unit; Columbus, OH, USA
 3 _APID 1,3146::24716237
-1 FAMS @F31@
-0 @P152@ INDI 
+1 FAMS @F32@
+0 @P158@ INDI 
 1 BIRT 
 2 DATE 5 May 1976
 2 PLAC Ohio, USA
@@ -3896,9 +3982,9 @@
 3 PAGE Ohio Department of Health; Columbus, Ohio; Ohio Marriage Index, 1970 and 1972-2007
 3 _APID 1,2025::8893100
 1 SEX F
-1 FAMC @F31@
-1 FAMS @F32@
-0 @P153@ INDI 
+1 FAMC @F32@
+1 FAMS @F33@
+0 @P159@ INDI 
 1 BIRT 
 2 DATE abt 1976
 2 SOUR @S1256986206@
@@ -3914,8 +4000,8 @@
 3 PAGE Ohio Department of Health; Columbus, Ohio; Ohio Marriage Index, 1970 and 1972-2007
 3 _APID 1,2025::3327492
 1 SEX M
-1 FAMS @F32@
-0 @P154@ INDI 
+1 FAMS @F33@
+0 @P160@ INDI 
 1 BIRT 
 2 DATE 25 September 1868
 2 PLAC Ohio, USA
@@ -3927,9 +4013,9 @@
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=154
-1 FAMC @F34@
-0 @P155@ INDI 
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=160
+1 FAMC @F35@
+0 @P161@ INDI 
 1 BIRT 
 2 DATE 27 May 1865
 2 PLAC Nelson, Portage County, Ohio, USA
@@ -3941,9 +4027,9 @@
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=155
-1 FAMC @F34@
-0 @P156@ INDI 
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=161
+1 FAMC @F35@
+0 @P162@ INDI 
 1 BIRT 
 2 DATE 24 January 1872
 2 PLAC Alliance, Stark, Ohio, USA
@@ -3955,24 +4041,24 @@
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=156
-1 FAMC @F34@
-0 @P157@ INDI 
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=162
+1 FAMC @F35@
+0 @P163@ INDI 
+1 NAME Anna McCall /Brush/
 1 BIRT 
 2 DATE 16 February 1875
 2 PLAC Alliance, Stark, Ohio, USA
 1 DEAT 
 2 DATE 20 March 1941
 2 PLAC Canton, Stark County, Ohio, USA
-1 NAME Anna McCall  /Brush/
 1 SEX F
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=157
-1 FAMC @F34@
-1 FAMS @F35@
-0 @P158@ INDI 
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=163
+1 FAMC @F35@
+1 FAMS @F36@
+0 @P164@ INDI 
 1 BIRT 
 2 DATE 26 Sep 1838
 2 PLAC Washington, Stark County, Ohio, USA
@@ -3984,9 +4070,9 @@
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=158
-1 FAMS @F34@
-0 @P159@ INDI 
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=164
+1 FAMS @F35@
+0 @P165@ INDI 
 1 BIRT 
 2 DATE 30 Nov 1904
 2 PLAC Canton, Stark, Ohio, USA
@@ -3998,9 +4084,9 @@
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=159
-1 FAMC @F35@
-0 @P160@ INDI 
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=165
+1 FAMC @F36@
+0 @P166@ INDI 
 1 BIRT 
 2 DATE 16 July 1908
 2 PLAC Canton, Stark, Ohio, USA
@@ -4012,11 +4098,11 @@
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=160
-1 FAMC @F35@
-1 FAMS @F36@
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=166
+1 FAMC @F36@
 1 FAMS @F37@
-0 @P161@ INDI 
+1 FAMS @F38@
+0 @P167@ INDI 
 1 BIRT 
 2 DATE 1 February 1872
 2 PLAC Mapleton, Stark County, Ohio, USA
@@ -4028,9 +4114,9 @@
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=161
-1 FAMS @F35@
-0 @P162@ INDI 
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=167
+1 FAMS @F36@
+0 @P168@ INDI 
 1 BIRT 
 2 DATE 18 Aug 1944
 2 PLAC Canton, Stark, Ohio, USA
@@ -4042,9 +4128,9 @@
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=162
-1 FAMC @F36@
-0 @P163@ INDI 
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=168
+1 FAMC @F37@
+0 @P169@ INDI 
 1 DEAT 
 2 DATE Nov 1985
 2 PLAC 1264 Prospect Rd, Whitehall
@@ -4064,10 +4150,10 @@
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=163
-1 FAMC @F36@
-1 FAMS @F38@
-0 @P164@ INDI 
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=169
+1 FAMC @F37@
+1 FAMS @F39@
+0 @P170@ INDI 
 1 BIRT 
 2 DATE 17 Apr 1910
 2 PLAC Chicago, Cook, Illinois, USA
@@ -4079,9 +4165,9 @@
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=164
-1 FAMS @F36@
-0 @P165@ INDI 
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=170
+1 FAMS @F37@
+0 @P171@ INDI 
 1 BIRT 
 2 DATE 17 Jan 1904
 2 PLAC Ohio
@@ -4092,25 +4178,25 @@
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=165
-1 FAMS @F37@
-0 @P166@ INDI 
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=171
+1 FAMS @F38@
+0 @P172@ INDI 
 1 SEX F
 1 NAME Mary Helen /Ipson/
 2 SOUR @S1256986781@
 3 PAGE Pittsburgh Post-Gazette; Publication Date: 28 Nov 1985; Publication Place: Pittsburgh, Pennsylvania, United States of America; URL: https://www.newspapers.com/image/88670220/?article=132839ff-e274-405
 4 CONC 0-8bf4-d02616d13d03&focus=0.31121704,0.8973159,0.4045740
 3 _APID 1,61843::265005440
-1 FAMC @F38@
-0 @P167@ INDI 
+1 FAMC @F39@
+0 @P173@ INDI 
 1 SEX M
 1 NAME Charles /Ipson/
 2 SOUR @S1256986781@
 3 PAGE Pittsburgh Post-Gazette; Publication Date: 28 Nov 1985; Publication Place: Pittsburgh, Pennsylvania, United States of America; URL: https://www.newspapers.com/image/88670220/?article=132839ff-e274-405
 4 CONC 0-8bf4-d02616d13d03&focus=0.31121704,0.8973159,0.4045740
 3 _APID 1,61843::264837138
-1 FAMC @F38@
-0 @P168@ INDI 
+1 FAMC @F39@
+0 @P174@ INDI 
 1 NAME Kenneth B. /Ipson/
 2 SOUR @S1256986781@
 3 PAGE Pittsburgh Post-Gazette; Publication Date: 28 Nov 1985; Publication Place: Pittsburgh, Pennsylvania, United States of America; URL: https://www.newspapers.com/image/88670220/?article=132839ff-e274-405
@@ -4120,8 +4206,1381 @@
 1 SOUR @S1217771584@
 2 PAGE Ancestry Family Tree
 2 DATA
-3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=168
-1 FAMS @F38@
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=174
+1 FAMS @F39@
+0 @P175@ INDI 
+1 BIRT 
+2 DATE 8 Feb 1779
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 25 Oct 1831
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 NAME Eunice /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=175
+1 FAMC @F40@
+0 @P176@ INDI 
+1 BIRT 
+2 DATE 13 Sep 1745
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 4 Jul 1816
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 NAME Peter /Burr/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=176
+1 FAMC @F40@
+0 @P177@ INDI 
+1 BIRT 
+2 DATE 23 May 1738
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 01 Jan 1823
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+1 NAME Ebenezer /Burr/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=177
+1 FAMC @F40@
+1 FAMS @F42@
+0 @P178@ INDI 
+1 BIRT 
+2 DATE 16 Jan 1731
+2 PLAC Danbury, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 28 July 1839
+2 PLAC Harlem, Delaware, Ohio, USA
+1 NAME Anna /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=178
+1 FAMC @F40@
+0 @P179@ INDI 
+1 BIRT 
+2 DATE 8 Feb 1730
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 1790
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 NAME Eunice /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=179
+1 FAMC @F40@
+0 @P180@ INDI 
+1 BIRT 
+2 DATE 7 Feb 1741
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 28 Nov 1809
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 NAME Abigail /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=180
+1 FAMC @F40@
+0 @P181@ INDI 
+1 BIRT 
+2 DATE 5 July 1743
+2 PLAC Fairfield, Fairfield County, Connecticut, USA
+1 DEAT 
+2 DATE 3 March 1813
+2 PLAC Fairfield, Fairfield County, Connecticut, USA
+1 NAME Sarah /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=181
+1 FAMC @F40@
+0 @P182@ INDI 
+1 BIRT 
+2 DATE abt 1727
+2 PLAC Connecticut, USA
+1 DEAT 
+2 DATE Bef. 1738
+1 NAME Ebenezer /Burr/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=182
+1 FAMC @F40@
+0 @P183@ INDI 
+1 BIRT 
+2 DATE 1724
+2 PLAC West Chester, Chester, Pennsylvania, USA
+1 DEAT 
+2 DATE 10 May 1795
+2 PLAC Faggs Manor, Chester County, Pennsylvania, USA
+1 NAME Margaret Frances /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=183
+1 FAMC @F40@
+0 @P184@ INDI 
+1 BIRT 
+2 DATE 23 Feb 1734
+2 PLAC Fairfield, Fairfield Co., Connecticut
+1 DEAT 
+2 DATE 12 Mar 1803
+2 PLAC Fairfield, Fairfield Co., Connecticut
+1 NAME Ellen /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=184
+1 FAMC @F40@
+0 @P185@ INDI 
+1 BIRT 
+2 DATE 5 Mar 1736
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 19 Nov 1779
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 NAME Ephraim /Burr/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=185
+1 FAMC @F40@
+1 FAMS @F41@
+0 @P186@ INDI 
+1 BIRT 
+2 DATE 25 October 1702
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 8 Jul 1780
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 NAME Abigail /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=186
+1 FAMS @F40@
+0 @P187@ INDI 
+1 NAME Catharine /Burr/
+1 BIRT 
+2 DATE 21 Mar 1766
+2 PLAC Westport, Fairfield, Connecticut
+1 DEAT 
+2 DATE 02 Sep 1835
+2 PLAC Westport, Fairfield, Connecticut
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=187
+1 OBJE
+2 FILE http://trees.ancestry.com/rd?f=image&guid=f52e7b19-7f97-4690-a606-78c509507252&tid=116823582&pid=187
+2 FORM jpg
+2 TITL Triplet sea captains
+1 FAMC @F41@
+1 FAMS @F44@
+0 @P188@ INDI 
+1 BIRT 
+2 DATE 10 Nov 1774
+2 PLAC Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 29 Jul 1828
+2 PLAC Fairfield, Connecticut, USA
+1 NAME Sarah /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=188
+1 FAMC @F41@
+0 @P189@ INDI 
+1 BIRT 
+2 DATE 25 Sep 1779
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 25 Mar 1781
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 NAME Ephraim /Burr/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=189
+1 FAMC @F41@
+0 @P190@ INDI 
+1 BIRT 
+2 DATE 16 Mar 1777
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 09 Jul 1831
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 NAME Anne /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=190
+1 FAMC @F41@
+0 @P191@ INDI 
+1 BIRT 
+2 DATE 04 Sep 1768
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 03 Jun 1797
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 NAME Abigail /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=191
+1 FAMC @F41@
+0 @P192@ INDI 
+1 BIRT 
+2 DATE 01 Jul 1764
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 16 Jun 1791
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 NAME Eunice /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=192
+1 FAMC @F41@
+0 @P193@ INDI 
+1 BIRT 
+2 DATE 19 May 1771
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 08 Sep 1810
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 NAME Silas /Burr/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=193
+1 FAMC @F41@
+1 FAMS @F43@
+0 @P194@ INDI 
+1 BIRT 
+2 DATE 11 May 1743
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE May 1793
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 NAME Eunice /Wilson/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=194
+1 FAMS @F41@
+0 @P195@ INDI 
+1 BIRT 
+2 DATE 1769
+2 PLAC Wesport, Fairfield, Connecticut, USA
+1 NAME Sallie /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=195
+1 FAMC @F41@
+0 @P196@ INDI 
+1 BIRT 
+2 DATE 1766
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 2 Sep 1835
+2 PLAC Westport, Fairfield, Connecticut
+1 NAME Catherine /Burr/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=196
+1 FAMC @F41@
+0 @P197@ INDI 
+1 BIRT 
+2 DATE 1727
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 23 Jul 1818
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 NAME Hannah /Bulkley/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=197
+1 FAMS @F42@
+0 @P198@ INDI 
+1 BIRT 
+2 DATE 26 Jun 1800
+2 PLAC Saugatuck, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 31 Mar 1878
+2 PLAC Shelby, Richland, Ohio, United States
+1 NAME Sarah Burr /Sherwood/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=198
+1 FAMC @F44@
+0 @P199@ INDI 
+1 BIRT 
+2 DATE 23 Aug 1797
+2 PLAC Easton, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 13 Sep 1870
+2 PLAC Onondaga, Onondaga, New York
+1 NAME Daniel /Sherwood/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=199
+1 FAMC @F44@
+0 @P200@ INDI 
+1 BIRT 
+2 DATE 29 Jan 1805
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 08 May 1861
+2 PLAC Westport, Fairfield, Connecticut
+1 NAME Silas Burr /Sherwood/
+1 SEX M
+1 BIRT 
+2 DATE 29 Jan 1805
+2 PLAC Saugatuck, Fairfield, Connecticut, United States
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=200
+1 FAMC @F44@
+1 FAMS @F45@
+0 @P201@ INDI 
+1 BIRT 
+2 DATE 08 Jun 1761
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 19 Dec 1828
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 NAME Daniel /Sherwood/ II
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=201
+1 FAMS @F44@
+0 @P202@ INDI 
+1 BIRT 
+2 DATE 4 December 1795
+2 PLAC Connecticut, United States of America
+1 DEAT 
+2 DATE 12 February 1878
+2 PLAC Westport, Fairfield County, Connecticut, United States of America
+1 NAME Daniel /Sherwood/ IV
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=202
+1 FAMC @F44@
+0 @P203@ INDI 
+1 BIRT 
+2 DATE 1797
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 05 May 1878
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 NAME Henry /Sherwood/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=203
+1 FAMC @F44@
+0 @P204@ INDI 
+1 BIRT 
+2 DATE 03 Nov 1810
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 01 Nov 1884
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 NAME Francis /Sherwood/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=204
+1 FAMC @F44@
+0 @P205@ INDI 
+1 BIRT 
+2 DATE 03 Nov 1810
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE Mar 1879
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 NAME Frederick /Sherwood/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=205
+1 FAMC @F44@
+0 @P206@ INDI 
+1 BIRT 
+2 DATE 03 Nov 1810
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 09 Sep 1888
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 NAME Franklin /Sherwood/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=206
+1 FAMC @F44@
+0 @P207@ INDI 
+1 BIRT 
+2 DATE Feb 1799
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 29 Dec 1799
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 NAME Abigail /Sherwood/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=207
+1 FAMC @F44@
+0 @P208@ INDI 
+1 BIRT 
+2 DATE 08 Dec 1792
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 08 Jun 1864
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+1 NAME Eunice /Sherwood/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=208
+1 FAMC @F44@
+0 @P209@ INDI 
+1 BIRT 
+2 DATE 11 Aug 1790
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 19 Dec 1838
+2 PLAC Southport, Fairfield, Connecticut, United States
+1 NAME Catherine /Sherwood/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=209
+1 FAMC @F44@
+0 @P210@ INDI 
+1 BIRT 
+2 DATE 26 Aug 1789
+2 PLAC Connecticut, USA
+1 DEAT 
+2 DATE 23 Mar 1795
+2 PLAC Connecticut, USA
+1 NAME Gershom Burr /Sherwood/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=210
+1 FAMC @F44@
+0 @P211@ INDI 
+1 BIRT 
+2 DATE 02 May 1802
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 27 Jun 1873
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 NAME Abraham /Sherwood/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=211
+1 FAMC @F44@
+0 @P212@ INDI 
+1 BIRT 
+2 DATE 31 Jun 1788
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 DEAT 
+2 DATE 10 May 1860
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 NAME Ebenezer Burr /Sherwood/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=212
+1 FAMC @F44@
+0 @P213@ INDI 
+1 BIRT 
+2 DATE 1775
+1 DEAT 
+2 DATE 14 Nov 1818
+2 PLAC Connecticut, United States of America
+1 NAME Charity /Banks/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=213
+1 FAMS @F43@
+0 @P214@ INDI 
+1 BIRT 
+2 DATE 25 AUG 1835
+2 PLAC Connecticut
+1 DEAT 
+2 DATE 30 Mar 1900
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 NAME Catherine Burr /Sherwood/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=214
+1 FAMC @F45@
+0 @P215@ INDI 
+1 BIRT 
+2 DATE 1832
+2 PLAC Sherwoods Island,,Fairfield,CONNECTICUT,UNITED STATES of AMERICA, 
+1 DEAT 
+2 DATE 29 Mar 1866
+2 PLAC Connecticut
+1 NAME Jessup T. /Sherwood/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=215
+1 FAMC @F45@
+0 @P216@ INDI 
+1 BIRT 
+2 DATE 16 May 1839
+2 PLAC \Westport ,Fairfield, Connecticut, USA
+1 DEAT 
+2 DATE 15 Dec 1907
+2 PLAC Westport, Fairfield, Connecticut, USA
+1 NAME Moses Taylor /Sherwood/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=216
+1 FAMC @F45@
+0 @P217@ INDI 
+1 BIRT 
+2 DATE 6 Jul 1830
+2 PLAC Sherwoods Island, Fairfield, Fairfield, Connecticut, USA
+2 SOUR @S1256987601@
+3 PAGE Connecticut State Library; Hartford, Connecticut
+3 _APID 1,2900::664388
+2 SOUR @S1231210259@
+3 PAGE Year: 1880; Census Place: Westport, Fairfield, Connecticut; Roll: 96; Page: 70D; Enumeration District: 143
+3 _APID 1,6742::44611024
+2 SOUR @S1231210218@
+3 PAGE Year: 1870; Census Place: Westport, Fairfield, Connecticut; Roll: M593_99; Page: 283A; Family History Library Film: 545598
+3 _APID 1,7163::13646215
+1 RESI Residence Post Office: Wilton
+2 DATE 1870
+2 PLAC Westport, Fairfield, Connecticut, USA
+2 SOUR @S1231210218@
+3 PAGE Year: 1870; Census Place: Westport, Fairfield, Connecticut; Roll: M593_99; Page: 283A; Family History Library Film: 545598
+3 _APID 1,7163::13646215
+1 NAME Silas Burr /Sherwood/
+2 SOUR @S1256987601@
+3 PAGE Connecticut State Library; Hartford, Connecticut
+3 _APID 1,2900::664388
+2 SOUR @S1231210259@
+3 PAGE Year: 1880; Census Place: Westport, Fairfield, Connecticut; Roll: 96; Page: 70D; Enumeration District: 143
+3 _APID 1,6742::44611024
+2 SOUR @S1231210218@
+3 PAGE Year: 1870; Census Place: Westport, Fairfield, Connecticut; Roll: M593_99; Page: 283A; Family History Library Film: 545598
+3 _APID 1,7163::13646215
+1 DEAT 
+2 DATE 5 Dec 1896
+2 PLAC Westport, Fairfield, Connecticut
+2 SOUR @S1256987601@
+3 PAGE Connecticut State Library; Hartford, Connecticut
+3 _APID 1,2900::664388
+1 RESI Marital Status: MarriedRelation to Head: Self
+2 DATE 1880
+2 PLAC Westport, Fairfield, Connecticut, USA
+2 SOUR @S1231210259@
+3 PAGE Year: 1880; Census Place: Westport, Fairfield, Connecticut; Roll: 96; Page: 70D; Enumeration District: 143
+3 _APID 1,6742::44611024
+1 BURI 
+2 PLAC Westport, Connecticut, USA
+2 SOUR @S1256987601@
+3 PAGE Connecticut State Library; Hartford, Connecticut
+3 _APID 1,2900::664388
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=217
+1 FAMC @F45@
+1 FAMS @F46@
+0 @P218@ INDI 
+1 BIRT 
+2 DATE 29 APR 1807
+2 PLAC Sherwoods Island,,Fairfield,CONNECTICUT,UNITED STATES of AMERICA, 
+1 DEAT 
+2 DATE 04 Feb 1861
+2 PLAC Westport, Connecticut, USA
+1 NAME Anne Coley /Taylor/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=218
+1 FAMS @F45@
+0 @P219@ INDI 
+1 BIRT 
+2 DATE abt 1868
+2 PLAC New York
+2 SOUR @S1231210259@
+3 PAGE Year: 1880; Census Place: Westport, Fairfield, Connecticut; Roll: 96; Page: 70D; Enumeration District: 143
+3 _APID 1,6742::44611025
+2 SOUR @S1235446060@
+3 PAGE Year: 1920; Census Place: Norwalk Ward 3, Fairfield, Connecticut; Roll: T625_179; Page: 16B; Enumeration District: 143
+3 _APID 1,6061::6336053
+2 SOUR @S1231210218@
+3 PAGE Year: 1870; Census Place: Westport, Fairfield, Connecticut; Roll: M593_99; Page: 283A; Family History Library Film: 545598
+3 _APID 1,7163::1769858
+2 SOUR @S1235446068@
+3 PAGE Year: 1910; Census Place: Darien, Fairfield, Connecticut; Roll: T624_127; Page: 23A; Enumeration District: 0073; FHL microfilm: 1374140
+3 _APID 1,7884::2253316
+2 SOUR @S1257025591@
+3 _APID 1,2277::94130
+1 NAME Alexander West /Sherwood/
+2 SOUR @S1231210259@
+3 PAGE Year: 1880; Census Place: Westport, Fairfield, Connecticut; Roll: 96; Page: 70D; Enumeration District: 143
+3 _APID 1,6742::44611025
+2 SOUR @S1231209590@
+3 _APID 1,60901::642465357
+2 SOUR @S1235446060@
+3 PAGE Year: 1920; Census Place: Norwalk Ward 3, Fairfield, Connecticut; Roll: T625_179; Page: 16B; Enumeration District: 143
+3 _APID 1,6061::6336053
+2 SOUR @S1257025544@
+3 PAGE Year: 1930; Census Place: Norwalk, Fairfield, Connecticut; Page: 12A; Enumeration District: 0152; FHL microfilm: 2339993
+3 _APID 1,6224::9279865
+2 SOUR @S1231210218@
+3 PAGE Year: 1870; Census Place: Westport, Fairfield, Connecticut; Roll: M593_99; Page: 283A; Family History Library Film: 545598
+3 _APID 1,7163::1769858
+2 SOUR @S1235446068@
+3 PAGE Year: 1910; Census Place: Darien, Fairfield, Connecticut; Roll: T624_127; Page: 23A; Enumeration District: 0073; FHL microfilm: 1374140
+3 _APID 1,7884::2253316
+2 SOUR @S1231209702@
+3 _APID 1,2469::13372384
+2 SOUR @S1257025591@
+3 _APID 1,2277::94130
+1 RESI 
+2 DATE 1917
+2 PLAC Darien, Connecticut
+2 SOUR @S1257025591@
+3 _APID 1,2277::94130
+1 RESI 
+2 DATE 1923
+2 PLAC Norwalk, Connecticut, USA
+2 SOUR @S1231209702@
+3 _APID 1,2469::13372384
+1 RESI Marital Status: MarriedRelation to Head of House: Head
+2 DATE 1910
+2 PLAC Darien, Fairfield, Connecticut, USA
+2 SOUR @S1235446068@
+3 PAGE Year: 1910; Census Place: Darien, Fairfield, Connecticut; Roll: T624_127; Page: 23A; Enumeration District: 0073; FHL microfilm: 1374140
+3 _APID 1,7884::2253316
+1 RESI Residence Post Office: Wilton
+2 DATE 1870
+2 PLAC Westport, Fairfield, Connecticut, USA
+2 SOUR @S1231210218@
+3 PAGE Year: 1870; Census Place: Westport, Fairfield, Connecticut; Roll: M593_99; Page: 283A; Family History Library Film: 545598
+3 _APID 1,7163::1769858
+1 RESI Marital Status: MarriedRelation to Head: Head
+2 DATE 1930
+2 PLAC Norwalk, Fairfield, Connecticut, USA
+2 SOUR @S1257025544@
+3 PAGE Year: 1930; Census Place: Norwalk, Fairfield, Connecticut; Page: 12A; Enumeration District: 0152; FHL microfilm: 2339993
+3 _APID 1,6224::9279865
+1 RESI Marital Status: MarriedRelation to Head: Head
+2 DATE 1920
+2 PLAC Norwalk Ward 3, Fairfield, Connecticut, USA
+2 SOUR @S1235446060@
+3 PAGE Year: 1920; Census Place: Norwalk Ward 3, Fairfield, Connecticut; Roll: T625_179; Page: 16B; Enumeration District: 143
+3 _APID 1,6061::6336053
+1 RESI Marital Status: SingleRelation to Head: Son
+2 DATE 1880
+2 PLAC Westport, Fairfield, Connecticut, USA
+2 SOUR @S1231210259@
+3 PAGE Year: 1880; Census Place: Westport, Fairfield, Connecticut; Roll: 96; Page: 70D; Enumeration District: 143
+3 _APID 1,6742::44611025
+1 SEX M
+1 BIRT 
+2 DATE abt 1868
+2 PLAC New York
+2 SOUR @S1257025544@
+3 PAGE Year: 1930; Census Place: Norwalk, Fairfield, Connecticut; Page: 12A; Enumeration District: 0152; FHL microfilm: 2339993
+3 _APID 1,6224::9279865
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=219
+1 FAMC @F46@
+1 FAMS @F47@
+0 @P220@ INDI 
+1 BIRT 
+2 DATE 1867
+2 PLAC Sherwoods Island,,Fairfield,CONNECTICUT,UNITED STATES of AMERICA, 
+1 DEAT 
+2 DATE 1 Sep 1868
+2 PLAC Sherwoods Island,,Fairfield,CONNECTICUT,UNITED STATES of AMERICA, 
+1 NAME Lewis Hyatt /SHERWOOD/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=220
+1 FAMC @F46@
+0 @P221@ INDI 
+1 BIRT 
+2 DATE 15 Sep 1829
+2 PLAC Wilton, Fairfield, Connecticut, USA
+2 SOUR @S1231210259@
+3 PAGE Year: 1880; Census Place: Westport, Fairfield, Connecticut; Roll: 96; Page: 70D; Enumeration District: 143
+3 _APID 1,6742::24544162
+2 SOUR @S1231210218@
+3 PAGE Year: 1870; Census Place: Westport, Fairfield, Connecticut; Roll: M593_99; Page: 283A; Family History Library Film: 545598
+3 _APID 1,7163::1770007
+1 RESI Residence Post Office: Wilton
+2 DATE 1870
+2 PLAC Westport, Fairfield, Connecticut, USA
+2 SOUR @S1231210218@
+3 PAGE Year: 1870; Census Place: Westport, Fairfield, Connecticut; Roll: M593_99; Page: 283A; Family History Library Film: 545598
+3 _APID 1,7163::1770007
+1 NAME Sarah Louisa /Hyatt/
+2 SOUR @S1231210259@
+3 PAGE Year: 1880; Census Place: Westport, Fairfield, Connecticut; Roll: 96; Page: 70D; Enumeration District: 143
+3 _APID 1,6742::24544162
+2 SOUR @S1231210218@
+3 PAGE Year: 1870; Census Place: Westport, Fairfield, Connecticut; Roll: M593_99; Page: 283A; Family History Library Film: 545598
+3 _APID 1,7163::1770007
+1 DEAT 
+2 DATE 13 Nov 1909
+2 PLAC Haverhill, Massachusetts, USA
+1 RESI Marital Status: MarriedRelation to Head: Wife
+2 DATE 1880
+2 PLAC Westport, Fairfield, Connecticut, USA
+2 SOUR @S1231210259@
+3 PAGE Year: 1880; Census Place: Westport, Fairfield, Connecticut; Roll: 96; Page: 70D; Enumeration District: 143
+3 _APID 1,6742::24544162
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=221
+1 FAMS @F46@
+0 @P222@ INDI 
+1 BIRT 
+2 DATE 7 Oct 1916
+2 PLAC Darien, Connecticut
+2 SOUR @S1235445820@
+3 PAGE Year: 1940; Census Place: Norwalk, Fairfield, Connecticut; Roll: m-t0627-00497; Page: 4A; Enumeration District: 1-95
+3 _APID 1,2442::135393321
+2 SOUR @S1231209590@
+3 _APID 1,60901::42465357
+2 SOUR @S1257025482@
+3 _APID 1,4124::1062103
+2 SOUR @S1257025497@
+3 PAGE Social Security Administration; Washington D.C., USA; Social Security Death Index, Master File
+3 _APID 1,3693::26978402
+2 SOUR @S1235446060@
+3 PAGE Year: 1920; Census Place: Norwalk Ward 3, Fairfield, Connecticut; Roll: T625_179; Page: 16B; Enumeration District: 143
+3 _APID 1,6061::6336055
+2 SOUR @S1257025544@
+3 PAGE Year: 1930; Census Place: Norwalk, Fairfield, Connecticut; Page: 12A; Enumeration District: 0152; FHL microfilm: 2339993
+3 _APID 1,6224::9279874
+1 RESI Marital Status: SingleRelation to Head: Daughter
+2 DATE 1930
+2 PLAC Norwalk, Fairfield, Connecticut, USA
+2 SOUR @S1257025544@
+3 PAGE Year: 1930; Census Place: Norwalk, Fairfield, Connecticut; Page: 12A; Enumeration District: 0152; FHL microfilm: 2339993
+3 _APID 1,6224::9279874
+1 NAME Maybelle Adeline /Sherwood/
+2 SOUR @S1257025368@
+3 PAGE New York State Department of Health; Albany, NY, USA; New York State Marriage Index
+3 _APID 1,61632::7442428
+2 SOUR @S1235445820@
+3 PAGE Year: 1940; Census Place: Norwalk, Fairfield, Connecticut; Roll: m-t0627-00497; Page: 4A; Enumeration District: 1-95
+3 _APID 1,2442::135393321
+2 SOUR @S1257025388@
+3 PAGE The National Archives in St. Louis, Missouri; St. Louis, Missouri; WWII Draft Registration Cards for Connecticut, 10/16/1940-03/31/1947; Record Group: Records of the Selective Service System, 147; Box
+4 CONC : 313
+3 _APID 1,2238::912089080
+2 SOUR @S1231209702@
+3 _APID 1,2469::1256322985
+2 SOUR @S1231209590@
+3 _APID 1,60901::42465357
+2 SOUR @S1257025482@
+3 _APID 1,4124::1062103
+2 SOUR @S1257025497@
+3 PAGE Social Security Administration; Washington D.C., USA; Social Security Death Index, Master File
+3 _APID 1,3693::26978402
+2 SOUR @S1235446060@
+3 PAGE Year: 1920; Census Place: Norwalk Ward 3, Fairfield, Connecticut; Roll: T625_179; Page: 16B; Enumeration District: 143
+3 _APID 1,6061::6336055
+2 SOUR @S1257025544@
+3 PAGE Year: 1930; Census Place: Norwalk, Fairfield, Connecticut; Page: 12A; Enumeration District: 0152; FHL microfilm: 2339993
+3 _APID 1,6224::9279874
+1 RESI Marital Status: SingleRelation to Head: Daughter
+2 DATE 1920
+2 PLAC Norwalk Ward 3, Fairfield, Connecticut, USA
+2 SOUR @S1235446060@
+3 PAGE Year: 1920; Census Place: Norwalk Ward 3, Fairfield, Connecticut; Roll: T625_179; Page: 16B; Enumeration District: 143
+3 _APID 1,6061::6336055
+1 RESI 
+2 DATE Bef. 1951
+2 PLAC Connecticut
+2 SOUR @S1257025497@
+3 PAGE Social Security Administration; Washington D.C., USA; Social Security Death Index, Master File
+3 _APID 1,3693::26978402
+1 DEAT 
+2 DATE 15 Apr 1990
+2 PLAC Trumbull, Fairfield, Connecticut, USA
+2 SOUR @S1231209590@
+3 _APID 1,60901::42465357
+2 SOUR @S1257025482@
+3 _APID 1,4124::1062103
+2 SOUR @S1257025497@
+3 PAGE Social Security Administration; Washington D.C., USA; Social Security Death Index, Master File
+3 _APID 1,3693::26978402
+1 RESI Marital Status: Divorced
+2 PLAC New Canaan, Fairfield, Connecticut
+2 SOUR @S1257025482@
+3 _APID 1,4124::1062103
+1 RESI 
+2 DATE 1941
+2 PLAC Norwalk, Connecticut, USA
+2 SOUR @S1231209702@
+3 _APID 1,2469::1256322985
+1 RESI 
+2 DATE 1935
+2 PLAC Norwalk, Fairfield, Connecticut
+2 SOUR @S1235445820@
+3 PAGE Year: 1940; Census Place: Norwalk, Fairfield, Connecticut; Roll: m-t0627-00497; Page: 4A; Enumeration District: 1-95
+3 _APID 1,2442::135393321
+1 RESI Marital Status: MarriedRelation to Head: Wife
+2 DATE 1940
+2 PLAC Norwalk, Fairfield, Connecticut, USA
+2 SOUR @S1235445820@
+3 PAGE Year: 1940; Census Place: Norwalk, Fairfield, Connecticut; Roll: m-t0627-00497; Page: 4A; Enumeration District: 1-95
+3 _APID 1,2442::135393321
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=222
+1 FAMC @F47@
+1 FAMS @F49@
+1 FAMS @F51@
+0 @P223@ INDI 
+1 BIRT 
+2 DATE Feb 1875
+2 PLAC Connecticut
+2 SOUR @S1235445820@
+3 PAGE Year: 1940; Census Place: Norwalk, Fairfield, Connecticut; Roll: m-t0627-00497; Page: 4A; Enumeration District: 1-95
+3 _APID 1,2442::135393322
+2 SOUR @S1235446060@
+3 PAGE Year: 1920; Census Place: Norwalk Ward 3, Fairfield, Connecticut; Roll: T625_179; Page: 16B; Enumeration District: 143
+3 _APID 1,6061::6336054
+2 SOUR @S1257025544@
+3 PAGE Year: 1930; Census Place: Norwalk, Fairfield, Connecticut; Page: 12A; Enumeration District: 0152; FHL microfilm: 2339993
+3 _APID 1,6224::9279892
+2 SOUR @S1235446068@
+3 PAGE Year: 1910; Census Place: Darien, Fairfield, Connecticut; Roll: T624_127; Page: 23A; Enumeration District: 0073; FHL microfilm: 1374140
+3 _APID 1,7884::156130894
+1 DEAT 
+2 PLAC South Norwalk, CT
+1 NAME Etta J /Hoyt/
+2 SOUR @S1235445820@
+3 PAGE Year: 1940; Census Place: Norwalk, Fairfield, Connecticut; Roll: m-t0627-00497; Page: 4A; Enumeration District: 1-95
+3 _APID 1,2442::135393322
+2 SOUR @S1231209590@
+3 _APID 1,60901::792465357
+2 SOUR @S1235446060@
+3 PAGE Year: 1920; Census Place: Norwalk Ward 3, Fairfield, Connecticut; Roll: T625_179; Page: 16B; Enumeration District: 143
+3 _APID 1,6061::6336054
+2 SOUR @S1257025544@
+3 PAGE Year: 1930; Census Place: Norwalk, Fairfield, Connecticut; Page: 12A; Enumeration District: 0152; FHL microfilm: 2339993
+3 _APID 1,6224::9279892
+2 SOUR @S1235446068@
+3 PAGE Year: 1910; Census Place: Darien, Fairfield, Connecticut; Roll: T624_127; Page: 23A; Enumeration District: 0073; FHL microfilm: 1374140
+3 _APID 1,7884::156130894
+2 SOUR @S1231209702@
+3 _APID 1,2469::13372385
+1 RESI 
+2 DATE 1923
+2 PLAC Norwalk, Connecticut, USA
+2 SOUR @S1231209702@
+3 _APID 1,2469::13372385
+1 RESI Marital Status: MarriedRelation to Head of House: Wife
+2 DATE 1910
+2 PLAC Darien, Fairfield, Connecticut, USA
+2 SOUR @S1235446068@
+3 PAGE Year: 1910; Census Place: Darien, Fairfield, Connecticut; Roll: T624_127; Page: 23A; Enumeration District: 0073; FHL microfilm: 1374140
+3 _APID 1,7884::156130894
+1 RESI Marital Status: MarriedRelation to Head: Wife
+2 DATE 1930
+2 PLAC Norwalk, Fairfield, Connecticut, USA
+2 SOUR @S1257025544@
+3 PAGE Year: 1930; Census Place: Norwalk, Fairfield, Connecticut; Page: 12A; Enumeration District: 0152; FHL microfilm: 2339993
+3 _APID 1,6224::9279892
+1 RESI Marital Status: MarriedRelation to Head: Wife
+2 DATE 1920
+2 PLAC Norwalk Ward 3, Fairfield, Connecticut, USA
+2 SOUR @S1235446060@
+3 PAGE Year: 1920; Census Place: Norwalk Ward 3, Fairfield, Connecticut; Roll: T625_179; Page: 16B; Enumeration District: 143
+3 _APID 1,6061::6336054
+1 RESI 
+2 DATE 1935
+2 PLAC Norwalk, Fairfield, Connecticut
+2 SOUR @S1235445820@
+3 PAGE Year: 1940; Census Place: Norwalk, Fairfield, Connecticut; Roll: m-t0627-00497; Page: 4A; Enumeration District: 1-95
+3 _APID 1,2442::135393322
+1 RESI Marital Status: WidowedRelation to Head: Mother-in-law
+2 DATE 1940
+2 PLAC Norwalk, Fairfield, Connecticut, USA
+2 SOUR @S1235445820@
+3 PAGE Year: 1940; Census Place: Norwalk, Fairfield, Connecticut; Roll: m-t0627-00497; Page: 4A; Enumeration District: 1-95
+3 _APID 1,2442::135393322
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=223
+1 FAMC @F52@
+1 FAMS @F47@
+0 @P224@ INDI 
+1 BIRT 
+2 DATE 5 Jan 1854
+2 PLAC Walton, Delaware, New York, USA
+1 DEAT 
+2 DATE 28 Jan 1881
+2 PLAC Norwalk, Connecticut
+1 NAME Harriet Adelaide /Sawyer/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=224
+1 FAMS @F52@
+0 @P225@ INDI 
+1 BIRT 
+2 DATE 1847
+2 PLAC Walton, Delaware, New York, USA
+1 DEAT 
+2 DATE 6 Nov 1888
+2 PLAC Chicago, Cook, Illinois, USA
+1 NAME Frederick Hamilton /Hoyt/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=225
+1 FAMS @F52@
+0 @P226@ INDI 
+1 NAME Thomas /Heney/
+1 SEX M
+1 FAMS @F51@
+0 @P227@ INDI 
+1 BIRT 
+2 DATE 7 Mar 1909
+2 PLAC South Norwalk, Connecticut, USA
+2 SOUR @S1235445820@
+3 PAGE Year: 1940; Census Place: Norwalk, Fairfield, Connecticut; Roll: m-t0627-00497; Page: 4A; Enumeration District: 1-95
+3 _APID 1,2442::135393320
+2 SOUR @S1257025388@
+3 PAGE The National Archives in St. Louis, Missouri; St. Louis, Missouri; WWII Draft Registration Cards for Connecticut, 10/16/1940-03/31/1947; Record Group: Records of the Selective Service System, 147; Box
+4 CONC : 313
+3 _APID 1,2238::12089080
+2 SOUR @S1257025440@
+3 _APID 1,2441::7238853
+1 DEAT 
+2 DATE 15 Sep 1990
+2 PLAC Westport, Fairfield, Connecticut, USA
+2 SOUR @S1257025440@
+3 _APID 1,2441::7238853
+1 NAME Charles Ward Alexander /Palmer/ Sr
+2 SOUR @S1257025368@
+3 PAGE New York State Department of Health; Albany, NY, USA; New York State Marriage Index
+3 _APID 1,61632::7429354
+2 SOUR @S1235445820@
+3 PAGE Year: 1940; Census Place: Norwalk, Fairfield, Connecticut; Roll: m-t0627-00497; Page: 4A; Enumeration District: 1-95
+3 _APID 1,2442::135393320
+2 SOUR @S1257025388@
+3 PAGE The National Archives in St. Louis, Missouri; St. Louis, Missouri; WWII Draft Registration Cards for Connecticut, 10/16/1940-03/31/1947; Record Group: Records of the Selective Service System, 147; Box
+4 CONC : 313
+3 _APID 1,2238::12089080
+2 SOUR @S1231209702@
+3 _APID 1,2469::6460191
+2 SOUR @S1257025440@
+3 _APID 1,2441::7238853
+1 _MILT 
+2 DATE 26 Apr 1924
+2 SOUR @S1257025440@
+3 _APID 1,2441::7238853
+1 RESI 
+2 DATE 1941
+2 PLAC Norwalk, Connecticut, USA
+2 SOUR @S1231209702@
+3 _APID 1,2469::6460191
+1 RESI Marital Status: MarriedRelation to Head: Head
+2 DATE 1940
+2 PLAC Norwalk, Fairfield, Connecticut, USA
+2 SOUR @S1235445820@
+3 PAGE Year: 1940; Census Place: Norwalk, Fairfield, Connecticut; Roll: m-t0627-00497; Page: 4A; Enumeration District: 1-95
+3 _APID 1,2442::135393320
+2 SOUR @S1257025388@
+3 PAGE The National Archives in St. Louis, Missouri; St. Louis, Missouri; WWII Draft Registration Cards for Connecticut, 10/16/1940-03/31/1947; Record Group: Records of the Selective Service System, 147; Box
+4 CONC : 313
+3 _APID 1,2238::12089080
+1 RESI 
+2 DATE 1935
+2 PLAC Norwalk, Fairfield, Connecticut
+2 SOUR @S1235445820@
+3 PAGE Year: 1940; Census Place: Norwalk, Fairfield, Connecticut; Roll: m-t0627-00497; Page: 4A; Enumeration District: 1-95
+3 _APID 1,2442::135393320
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=227
+1 FAMC @F50@
+1 FAMS @F48@
+1 FAMS @F49@
+0 @P228@ INDI 
+1 BIRT 
+2 DATE abt 1883
+2 PLAC Massachusetts
+1 NAME Ella /Palmer/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=228
+1 FAMS @F50@
+0 @P229@ INDI 
+1 BIRT 
+2 DATE 17 July 1881
+2 PLAC Greenwich, Fairfield, CT, USA
+1 DEAT 
+2 DATE 7 September 1958
+2 PLAC Norwalk, Fairfield, Connecticut
+1 NAME Ward Snyder /Palmer/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=229
+1 FAMS @F50@
+0 @P230@ INDI 
+1 BIRT 
+2 DATE 19 Jul 1924
+2 PLAC Rumford, ME
+1 DEAT 
+2 DATE 1 Feb 2008
+2 PLAC Fairfield
+1 NAME Bernadette Josephine Mary /Cloutier/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=230
+1 FAMS @F48@
+0 @P231@ INDI 
+1 BIRT 
+2 DATE 4 Jun 1961
+2 PLAC Norwalk Connecticut
+1 DEAT 
+2 DATE 10 Jun 2014
+1 NAME William Alexander /Palmer/ Sr.
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=231
+1 FAMC @F48@
+0 @P232@ INDI 
+1 BIRT 
+2 DATE 16 March 1944
+2 PLAC Norwalk, Fairfield County, Connecticut, United States of America
+1 DEAT 
+2 DATE 25 November 2014
+2 PLAC Danbury, Fairfield County, Connecticut, United States of America
+1 NAME Lois Etta /Treadway/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=232
+1 FAMC @F48@
+0 @P233@ INDI 
+1 BIRT 
+2 DATE 4 Dec 1956
+2 PLAC Norwalk, Fairfield County, Connecticut, United States of America
+1 DEAT 
+2 DATE 13 February 2016
+2 PLAC Norwalk, Fairfield County, Connecticut, United States of America
+1 NAME Bernadette E. /Palmer/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=233
+1 FAMC @F48@
+0 @P234@ INDI 
+1 BIRT 
+2 DATE 16 July 1952
+2 PLAC Norwalk, Fairfield County, Connecticut, United States of America
+1 DEAT 
+2 DATE 14 December 2014
+2 PLAC Norwalk, Fairfield County, Connecticut, United States of America
+1 NAME Charmaine /LeTendre/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=234
+1 FAMC @F48@
+0 @P235@ INDI 
+1 BIRT 
+2 DATE 6 Dec 1910
+2 PLAC Norwalk Fair, Connecticut
+1 DEAT 
+2 DATE 27 Jul 2004
+1 NAME Edward Willis /Palmer/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=235
+1 FAMC @F50@
+0 @P236@ INDI 
+1 BIRT 
+2 DATE 1907
+2 PLAC Connecticut
+1 NAME Emma Mabelle /Palmer/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=236
+1 FAMC @F50@
+0 @P237@ INDI 
+1 BIRT 
+2 DATE Jun 1891
+2 PLAC Norwalk, Connecticut
+1 DEAT 
+2 PLAC Norwalk,  CT
+1 NAME Clara /Hoyt/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=237
+1 FAMC @F52@
+0 @P238@ INDI 
+1 BIRT 
+2 DATE Aug 1893
+2 PLAC Norwalk, Connecticut
+1 DEAT 
+2 DATE 1911
+2 PLAC Norwalk, Connecticut
+1 NAME Albert Steven /Hoyt/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=238
+1 FAMC @F52@
+0 @P239@ INDI 
+1 BIRT 
+2 DATE Feb 1875
+2 PLAC Connecticut
+1 DEAT 
+2 PLAC South Norwalk, CT
+1 NAME Etta J /Hoyt/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=239
+1 FAMC @F52@
+0 @P240@ INDI 
+1 BIRT 
+2 DATE May 1881
+2 PLAC Norwalk, Fairfield County, Connecticut
+1 DEAT 
+2 DATE 1950
+2 PLAC Fairfield County, Fairfield Connecticut
+1 NAME Sarah Augustus Sadie /Hoyt/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=240
+1 FAMC @F52@
+0 @P241@ INDI 
+1 BIRT 
+2 DATE Jun 1891
+2 PLAC Norwalk, Connecticut
+1 DEAT 
+2 PLAC Norwalk,  CT
+1 NAME Clara /Hoyt/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=241
+1 FAMC @F52@
+0 @P242@ INDI 
+1 BIRT 
+2 DATE Aug 1893
+2 PLAC Norwalk, Connecticut
+1 DEAT 
+2 DATE 1911
+2 PLAC Norwalk, Connecticut
+1 NAME Albert Steven /Hoyt/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=242
+1 FAMC @F52@
+0 @P243@ INDI 
+1 BIRT 
+2 DATE Apr 1874
+2 PLAC South Norwalk, CT
+1 DEAT 
+2 DATE 2 Nov 1888
+1 NAME Frederick /Hoyt/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=243
+1 FAMC @F52@
+0 @P244@ INDI 
+1 BIRT 
+2 DATE May 1881
+2 PLAC Norwalk, Fairfield County, Connecticut
+1 DEAT 
+2 DATE 23 Oct 1948
+2 PLAC Norwalk, CT
+1 NAME Sarah "Sadie" Augustus /Hoyt/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=244
+1 FAMC @F52@
+0 @P245@ INDI 
+1 BIRT 
+2 DATE Aug 1893
+2 PLAC Connecticut
+1 NAME Albert /Hoyt/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=245
+1 FAMC @F52@
+0 @P246@ INDI 
+1 BIRT 
+2 DATE Jun 1891
+2 PLAC Connecticut
+1 NAME Clara /Hoyt/
+1 SEX F
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=246
+1 FAMC @F52@
+0 @P247@ INDI 
+1 BIRT 
+2 DATE 17 Mar 1880
+2 PLAC Chicago, Cook, Illinois
+1 DEAT 
+2 DATE 1955
+2 PLAC Carlsbad, Eddy, New Mexico, USA
+1 NAME Ralph /Hoyt/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=247
+1 FAMC @F52@
+0 @P248@ INDI 
+1 BIRT 
+2 DATE 1876
+2 PLAC Ulinois
+1 DEAT 
+2 DATE 19 Nov 1955
+2 PLAC Van Buren, Michigan
+1 NAME Robert Harlow /Hoyt/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=248
+1 FAMC @F52@
+0 @P249@ INDI 
+1 BIRT 
+2 DATE 11 SEP 1872
+2 PLAC Connecticut
+1 DEAT 
+2 DATE 2 NOV 1888
+1 NAME Frederick Carroll /Hoyt/
+1 SEX M
+1 SOUR @S1217771584@
+2 PAGE Ancestry Family Tree
+2 DATA
+3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=116823582&pid=249
+1 FAMC @F52@
 0 @F1@ FAM 
 1 HUSB @P1@
 1 WIFE @P2@
@@ -4610,31 +6069,31 @@
 0 @F28@ FAM 
 1 HUSB @P140@
 1 WIFE @P139@
-1 CHIL @P141@
+1 CHIL @P143@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P142@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P143@
+1 CHIL @P146@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P141@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P148@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P147@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P108@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P144@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P145@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P148@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P146@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P108@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR 
@@ -4646,32 +6105,56 @@
 1 MARR 
 2 DATE Oct 1698
 0 @F29@ FAM 
+1 HUSB @P142@
+1 WIFE @P154@
+1 CHIL @P150@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P151@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P149@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P152@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P153@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR 
+2 DATE 10 Nov 1690
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+1 MARR 
+2 DATE 1694
+2 PLAC New England, USA
+0 @F30@ FAM 
 1 HUSB @P125@
 1 WIFE @P124@
 1 CHIL @P109@
 2 _FREL Natural
 2 _MREL Natural
-0 @F30@ FAM 
-1 HUSB @P150@
-1 WIFE @P149@
+0 @F31@ FAM 
+1 HUSB @P156@
+1 WIFE @P155@
 1 CHIL @P63@
 2 _FREL Natural
 2 _MREL Natural
-0 @F31@ FAM 
-1 HUSB @P151@
+0 @F32@ FAM 
+1 HUSB @P157@
 1 WIFE @P83@
-1 CHIL @P152@
+1 CHIL @P158@
 2 _FREL Natural
 2 _MREL Natural
-0 @F32@ FAM 
-1 HUSB @P153@
-1 WIFE @P152@
+0 @F33@ FAM 
+1 HUSB @P159@
+1 WIFE @P158@
 1 MARR 
 2 DATE 25 Jul 1998
 2 SOUR @S1256986206@
 3 PAGE Ohio Department of Health; Columbus, Ohio; Ohio Marriage Index, 1970 and 1972-2007
 3 _APID 1,2025::3327492
-0 @F33@ FAM 
+0 @F34@ FAM 
 1 HUSB @P72@
 1 WIFE @P62@
 1 CHIL @P77@
@@ -4698,74 +6181,327 @@
 1 MARR 
 2 DATE 10 Dec 1828
 2 PLAC Nelson, Portage, Ohio, United States
-0 @F34@ FAM 
-1 HUSB @P158@
-1 WIFE @P71@
-1 CHIL @P155@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P154@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P156@
-2 _FREL Natural
-2 _MREL Natural
-1 CHIL @P157@
-2 _FREL Natural
-2 _MREL Natural
-1 MARR 
-2 DATE 10 June 1863
-2 PLAC Portage County, Ohio, USA
 0 @F35@ FAM 
-1 HUSB @P161@
-1 WIFE @P157@
-1 CHIL @P159@
+1 HUSB @P164@
+1 WIFE @P71@
+1 CHIL @P161@
 2 _FREL Natural
 2 _MREL Natural
 1 CHIL @P160@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
-2 DATE 23 May 1899
-2 PLAC Niagara Falls, Ontario, Canada
-0 @F36@ FAM 
-1 HUSB @P160@
-1 WIFE @P164@
-1 CHIL @P163@
-2 _FREL Natural
-2 _MREL Natural
 1 CHIL @P162@
 2 _FREL Natural
 2 _MREL Natural
-0 @F37@ FAM 
-1 HUSB @P160@
-1 WIFE @P165@
+1 CHIL @P163@
+2 _FREL Natural
+2 _MREL Natural
 1 MARR 
-2 DATE 14 Feb 1986
-0 @F38@ FAM 
-1 HUSB @P168@
+2 DATE 10 June 1863
+2 PLAC Portage County, Ohio, USA
+0 @F36@ FAM 
+1 HUSB @P167@
 1 WIFE @P163@
+1 CHIL @P165@
+2 _FREL Natural
+2 _MREL Natural
 1 CHIL @P166@
 2 _FREL Natural
 2 _MREL Natural
-1 CHIL @P167@
+1 MARR 
+2 DATE 23 May 1899
+2 PLAC Niagara Falls, Ontario, Canada
+0 @F37@ FAM 
+1 HUSB @P166@
+1 WIFE @P170@
+1 CHIL @P169@
 2 _FREL Natural
 2 _MREL Natural
+1 CHIL @P168@
+2 _FREL Natural
+2 _MREL Natural
+0 @F38@ FAM 
+1 HUSB @P166@
+1 WIFE @P171@
+1 MARR 
+2 DATE 14 Feb 1986
 0 @F39@ FAM 
+1 HUSB @P174@
+1 WIFE @P169@
+1 CHIL @P172@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P173@
+2 _FREL Natural
+2 _MREL Natural
+0 @F40@ FAM 
+1 HUSB @P153@
+1 WIFE @P186@
+1 CHIL @P183@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P182@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P179@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P178@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P184@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P185@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P177@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P180@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P181@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P176@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P175@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR 
+2 DATE 07 Jan 1725
+2 PLAC Fairfield, Fairfield, Connecticut, USA
+0 @F41@ FAM 
+1 HUSB @P185@
+1 WIFE @P194@
+1 CHIL @P192@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P196@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P187@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P191@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P195@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P193@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P188@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P190@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P189@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR 
+2 DATE 12 Aug 1762
+2 PLAC Fairfield, Fairfield, Connecticut, United States
+0 @F42@ FAM 
+1 HUSB @P177@
+1 WIFE @P197@
+0 @F43@ FAM 
+1 HUSB @P193@
+1 WIFE @P213@
+1 MARR 
+2 DATE 6 Mar 1796
+2 PLAC Westport, Fairfield, Connecticut, United States
+0 @F44@ FAM 
+1 HUSB @P201@
+1 WIFE @P187@
+1 CHIL @P212@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P210@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P209@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P208@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P202@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P203@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P199@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P207@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P198@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P211@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P200@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P204@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P205@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P206@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR 
+2 DATE 21 Mar 1787
+2 PLAC Westport, Fairfield, Connecticut, United States
+1 MARR 
+2 DATE 1799
+0 @F45@ FAM 
+1 HUSB @P200@
+1 WIFE @P218@
+1 CHIL @P217@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P215@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P214@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P216@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR 
+2 DATE 31 May 1829
+2 PLAC Fairfield, Connecticut, USA
+0 @F46@ FAM 
+1 HUSB @P217@
+1 WIFE @P221@
+1 CHIL @P220@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P219@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR 
+2 DATE 5 Jan 1852
+2 PLAC Westport, Connecticut, USA
+0 @F47@ FAM 
+1 HUSB @P219@
+1 WIFE @P223@
+1 CHIL @P222@
+2 _FREL Natural
+2 _MREL Natural
+0 @F48@ FAM 
+1 HUSB @P227@
+1 WIFE @P230@
+1 CHIL @P232@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P234@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P233@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P231@
+2 _FREL Natural
+2 _MREL Natural
+0 @F49@ FAM 
+1 HUSB @P227@
+1 WIFE @P222@
+1 MARR 
+2 DATE 18 Nov 1939
+2 PLAC Pelham, New York, USA
+2 SOUR @S1257025368@
+3 PAGE New York State Department of Health; Albany, NY, USA; New York State Marriage Index
+3 _APID 1,61632::7429354
+0 @F50@ FAM 
+1 HUSB @P229@
+1 WIFE @P228@
+1 CHIL @P236@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P227@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P235@
+2 _FREL Natural
+2 _MREL Natural
+0 @F51@ FAM 
+1 HUSB @P226@
+1 WIFE @P222@
+0 @F52@ FAM 
+1 HUSB @P225@
+1 WIFE @P224@
+1 CHIL @P249@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P243@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P223@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P239@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P248@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P247@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P240@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P244@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P237@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P241@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P246@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P238@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P242@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @P245@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR 
+2 DATE 3 Jul 1871
+0 @F53@ FAM 
 1 WIFE @P86@
 1 CHIL @P42@
 2 _MREL Natural
-0 @F40@ FAM 
+0 @F54@ FAM 
 1 HUSB @P79@
 1 CHIL @P51@
 2 _FREL Natural
-0 @F41@ FAM 
+0 @F55@ FAM 
 1 HUSB @P48@
 1 CHIL @P61@
 2 _FREL Natural
 1 CHIL @P60@
 2 _FREL Natural
-0 @F42@ FAM 
+0 @F56@ FAM 
 1 WIFE @P111@
 1 CHIL @P87@
 2 _MREL Natural
@@ -5167,4 +6903,52 @@
 1 AUTH Ancestry.com
 1 PUBL Ancestry.com Operations Inc
 1 _APID 1,61843::0
+0 @S1256987601@ SOUR
+1 REPO @R1200898723@
+1 TITL Connecticut, U.S., Hale Collection of Cemetery Inscriptions and Newspaper Notices, 1629-1934
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+1 _APID 1,2900::0
+0 @S1257025368@ SOUR
+1 REPO @R1200898723@
+1 TITL New York State, Marriage Index, 1881-1967
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+1 _APID 1,61632::0
+0 @S1257025388@ SOUR
+1 REPO @R1200898723@
+1 TITL U.S., World War II Draft Cards Young Men, 1940-1947
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+1 _APID 1,2238::0
+0 @S1257025440@ SOUR
+1 REPO @R1200898723@
+1 TITL U.S., Department of Veterans Affairs BIRLS Death File, 1850-2010
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+1 _APID 1,2441::0
+0 @S1257025482@ SOUR
+1 REPO @R1200898723@
+1 TITL Connecticut Death Index, 1949-2012
+1 AUTH Connecticut Department of Health
+1 PUBL Ancestry.com Operations, Inc.
+1 _APID 1,4124::0
+0 @S1257025497@ SOUR
+1 REPO @R1200898723@
+1 TITL U.S., Social Security Death Index, 1935-2014
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+1 _APID 1,3693::0
+0 @S1257025544@ SOUR
+1 REPO @R1200898723@
+1 TITL 1930 United States Federal Census
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations Inc
+1 _APID 1,6224::0
+0 @S1257025591@ SOUR
+1 REPO @R1200898723@
+1 TITL Connecticut, U.S., Military Census, 1917
+1 AUTH Ancestry.com
+1 PUBL Ancestry.com Operations, Inc.
+1 _APID 1,2277::0
 0 TRLR

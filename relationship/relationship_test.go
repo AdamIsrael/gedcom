@@ -20,18 +20,31 @@ func TestGedcom_asdf(t *testing.T) {
 	var test = make(map[*types.Individual]string)
 
 	// TODO: This will panic if no individuals are found
+	// var individuals []types.Individual
+	// if individuals = search.FindIndividualsByNameDate(*g, "Aurelius /Bierce/", 1830, 1862); len(individuals) > 0 {
+	// 	test[&individuals[0]] = "Brother"
+	// }
+
 	test[&search.FindIndividualsByNameDate(*g, "Aurelius /Bierce/", 1830, 1862)[0]] = "Brother"
 	test[&search.FindIndividualsByName(*g, "Aurelia Jane /Bierce/")[0]] = "Sister"
 
 	// Aunt/Uncles
 	test[&search.FindIndividualsByName(*g, "Mary Pierce /Sherwood/")[0]] = "Aunt"
-	test[&search.FindIndividualsByNameDate(*g, "Nathaniel /Burr/", 1665, 1701)[0]] = "3rd Great-Granduncle"
 
 	test[&search.FindIndividualsByName(*g, "Amelia Anna /McCall/")[0]] = "1st Cousin"
 	test[&search.FindIndividualsByName(*g, "Anna McCall\\s+/Brush/")[0]] = "1st Cousin 1x Removed"
 	test[&search.FindIndividualsByName(*g, "Sherwood /Ake/")[0]] = "1st Cousin 2x Removed"
 	test[&search.FindIndividualsByName(*g, "Emily Alden /Ake/")[0]] = "1st Cousin 3x Removed"
 	test[&search.FindIndividualsByName(*g, "Mary Helen /Ipson/")[0]] = "1st Cousin 4x Removed"
+
+	test[&search.FindIndividualsByNameDate(*g, "Nathaniel /Burr/", 1665, 1701)[0]] = "3rd Great-Granduncle"
+	test[&search.FindIndividualsByNameDate(*g, "Ephraim /Burr/", 1700, 1776)[0]] = "1st Cousin 4x Removed"
+	test[&search.FindIndividualsByNameDate(*g, "Ephraim /Burr/", 1736, 1779)[0]] = "2nd Cousin 3x Removed"
+	test[&search.FindIndividualsByNameDate(*g, "Catherine /Burr/", 1766, 1835)[0]] = "3rd Cousin 2x Removed"
+	test[&search.FindIndividualsByNameDate(*g, "Silas Burr /Sherwood/", 1805, 1861)[0]] = "4th Cousin 1x Removed"
+	test[&search.FindIndividualsByNameDate(*g, "Silas Burr /Sherwood/", 1830, 1896)[0]] = "5th Cousin"
+	test[&search.FindIndividualsByName(*g, "Alexander West /Sherwood/")[0]] = "5th Cousin 1x Removed"
+	test[&search.FindIndividualsByName(*g, "Maybelle Adeline /Sherwood/")[0]] = "5th Cousin 2x Removed"
 
 	test[&search.FindIndividualsByName(*g, "Vesta Iola /Chappell/")[0]] = "Grandniece"
 	test[&search.FindIndividualsByName(*g, "Joann T /Johnson/")[0]] = "Great-Grandniece"
