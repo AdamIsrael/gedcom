@@ -55,7 +55,7 @@ func TestGedcom_asdf(t *testing.T) {
 
 	test[&search.FindIndividualsByName(*g, "Laura /Sherwood/")[0]] = "Mother"
 
-	for match, _ := range test {
+	for match := range test {
 		var relation = relationship.CalculateRelationship(*homeIndividual, *match)
 
 		// 	fmt.Printf("\n** Relationship to %s: %s **\n\n", match.Name[0].Name, relation)
