@@ -18,6 +18,10 @@ This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("stats called")
+
+		// Display statistics about this GEDCOM
+		// # of Individuals
+		// # of Families
 	},
 }
 

@@ -13,6 +13,8 @@ var lintCmd = &cobra.Command{
 	Long:  `Analyze a GEDCOM file for errors, duplication, and common errors.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("lint called")
+
+		// TODO: Perform sort of linting against the GEDCOM.
 	},
 }
 
