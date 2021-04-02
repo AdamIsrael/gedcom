@@ -11,7 +11,7 @@ func TestType_header(t *testing.T) {
 		"",                   // ID
 		types.Source{},       // Source
 		types.CharacterSet{}, // CharacterSet
-		"",                   // Version
+		"5.5",                // Version
 		"",                   // ProductName
 		"",                   // BusinessName
 		types.Address{},      // BusinessAddress

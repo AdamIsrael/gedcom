@@ -22,6 +22,7 @@ This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	}
 )
+var version = "1.0.0"
 
 // Execute executes the root command.
 func Execute() error {

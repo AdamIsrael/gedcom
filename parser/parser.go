@@ -63,8 +63,9 @@ import (
 
 // Parser represents a parser.
 type Parser struct {
-	s    *Scanner
-	refs map[string]interface{}
+	s      *Scanner
+	header types.Header
+	refs   map[string]interface{}
 	// r io.Reader
 	// buf struct {
 	// 	// tok Token  // last read token
@@ -101,18 +102,20 @@ func (p *Parser) Parse() (*types.Gedcom, error) {
 		Header: types.Header{ID: "test"},
 	}
 
+	p.header = types.Header{
+		Version: "1.1",
+	}
 	p.refs = make(map[string]interface{})
 	p.parsers = []parser{makeRootParser(p, g)}
 	p.Scan(g)
 
+	g.Header = p.header
 	return g, nil
 }
 
 func (p *Parser) Scan(g *types.Gedcom) {
 	s := &Scanner{}
 
-	// buf := make([]byte, 512)
-	// buf := ""
 	pos := 0
 	for {
 		line, err := p.s.r.ReadString('\n')
@@ -132,18 +135,6 @@ func (p *Parser) Scan(g *types.Gedcom) {
 		}
 
 		p.parsers[len(p.parsers)-1](s.level, string(s.tag), string(s.value), string(s.xref))
-
-		// switch s.level {
-		// case 0:
-		// 	switch s.tag {
-		// 	case "HEAD":
-		// 		print("asfd\n")
-		//
-		// 	}
-		// }
-		// fmt.Printf("%d %s %s\n", s.level, s.tag, s.value)
-		// d.parsers[len(d.parsers)-1](s.level, string(s.tag), string(s.value), string(s.xref))
-
 	}
 }
 
@@ -153,8 +144,8 @@ func makeRootParser(p *Parser, g *types.Gedcom) parser {
 		if level == 0 {
 			switch tag {
 			case "HEAD":
-				// obj := p.head(xref)
-				// println("obj: %x", obj)
+				obj := p.head(xref)
+				p.pushParser(makeHeaderParser(p, obj, level))
 			case "INDI":
 				obj := p.individual(xref)
 				g.Individual = append(g.Individual, obj)
@@ -176,15 +167,7 @@ func makeRootParser(p *Parser, g *types.Gedcom) parser {
 }
 
 func (p *Parser) head(xref string) *types.Header {
-	// if xref == "" {
-	// 	println("xref not set")
-	// 	return &types.Header{}
-	// }
-	ref, _ := p.refs[xref].(*types.Header)
-	// if !found {
-	// 	fmt.Printf("%s not found", xref)
-	// }
-	return ref
+	return &p.header
 }
 
 func makeHeaderParser(p *Parser, h *types.Header, minLevel int) parser {
@@ -192,10 +175,17 @@ func makeHeaderParser(p *Parser, h *types.Header, minLevel int) parser {
 		if level <= minLevel {
 			return p.popParser(level, tag, value, xref)
 		}
-		switch tag {
-		case "CHAR":
-			h.CharacterSet.Name = value
+
+		if level == 1 {
+
+			switch tag {
+			case "CHAR":
+				h.CharacterSet.Name = value
+			case "GEDC":
+				p.pushParser(makeVersionParser(p, h, level))
+			}
 		}
+
 		return nil
 	}
 }
@@ -214,6 +204,7 @@ func (p *Parser) individual(xref string) *types.Individual {
 	return ref
 
 }
+
 func makeIndividualParser(p *Parser, i *types.Individual, minLevel int) parser {
 	return func(level int, tag string, value string, xref string) error {
 		if level <= minLevel {
@@ -324,6 +315,21 @@ func makeSourceParser(p *Parser, s *types.Source, minLevel int) parser {
 
 		return nil
 	}
+}
+
+func makeVersionParser(p *Parser, h *types.Header, minLevel int) parser {
+	return func(level int, tag string, value string, xref string) error {
+		if level <= minLevel {
+			return p.popParser(level, tag, value, xref)
+		}
+		switch tag {
+		case "VERS":
+			h.Version = value
+		}
+
+		return nil
+	}
+
 }
 
 func makeCitationParser(p *Parser, c *types.Citation, minLevel int) parser {
