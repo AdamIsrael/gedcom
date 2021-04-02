@@ -1,5 +1,7 @@
 package types
 
+import "strconv"
+
 type Header struct {
 	ID              string
 	Source          Source
@@ -16,5 +18,12 @@ func (h Header) IsValid() bool {
 	if len(h.ID) > 20 {
 		valid = false
 	}
+
+	version, _ := strconv.ParseFloat(h.Version, 32)
+
+	if version < 5.5 || version >= 5.6 {
+		valid = false
+	}
+
 	return valid
 }
