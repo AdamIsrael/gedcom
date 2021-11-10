@@ -18,8 +18,6 @@ Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("stats called")
-
 		g, err := gedcom.OpenGedcom(gedcomFile)
 		if g == nil || err != nil {
 			fmt.Printf("Invalid GEDCOM file: %s\n", err)
@@ -27,6 +25,7 @@ to quickly create a Cobra application.`,
 		}
 
 		// Display statistics about this GEDCOM
+		fmt.Println("GEDCOM Statistics:")
 		fmt.Printf("%d individuals\n", len(g.Individual))
 		fmt.Printf("%d families\n", len(g.Family))
 		fmt.Printf("%d sources\n", len(g.Source))
